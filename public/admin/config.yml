@@ -1,9 +1,8 @@
 backend:
-  name: github
-  repo: yourusername/your-repo  # Replace with your GitHub repo
-  branch: main
+  name: git-gateway
+  branch: main  # Change to your default branch
 
-media_folder: "public/uploads"  # Images are stored here
+media_folder: "public/uploads"
 public_folder: "/uploads"
 
 collections:
