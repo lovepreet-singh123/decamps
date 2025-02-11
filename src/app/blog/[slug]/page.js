@@ -20,7 +20,7 @@ export default async function BlogPost({ params }) {
     return (
         <div>
             <h1>{post.title}</h1>
-            <p>{post.date}</p>
+            {/* <p>{post.date}</p> */}
             <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
     );
