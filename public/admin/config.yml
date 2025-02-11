@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
-  branch: main  # Change if your default branch is different
-
+  name: github
+  repo: lovepreet-singh123/decamps # Replace with your GitHub repo
+  branch: main
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
