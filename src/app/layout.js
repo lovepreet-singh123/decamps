@@ -1,10 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import CMS from "decap-cms-app";
-// // Initialize the CMS object
-// CMS.init();
-// // Now the registry is available via the CMS object.
-// CMS.registerPreviewTemplate("my-template", MyTemplate);
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

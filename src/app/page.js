@@ -1,19 +1,16 @@
-import fs from "fs";
-import path from "path";
 import Link from "next/link";
+import { getPosts } from "./lib/posts";
 
 export default async function Home() {
-    const postsDir = path.join(process.cwd(), "content/posts");
-    const files = fs.readdirSync(postsDir);
-    const posts = files.map((file) => file.replace(".md", ""));
+    const posts = await getPosts(); // Fetch markdown files
 
     return (
         <div>
             <h1>Blog Posts</h1>
             <ul>
-                {posts.map((slug) => (
-                    <li key={slug}>
-                        <Link href={`/posts/${slug}`}>{slug}</Link>
+                {posts.map((post) => (
+                    <li key={post.slug}>
+                        <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                     </li>
                 ))}
             </ul>

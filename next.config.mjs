@@ -1,15 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    async redirects() {
-        return [
-            {
-                source: '/admin',
-                destination: '/admin/index.html',
-                permanent: true,
-            },
-        ];
-    },
-
+    output: 'export', // This makes Next.js generate static files
 };
 
 export default nextConfig;
