@@ -1,6 +1,5 @@
 backend:
   name: github
-  repo: lovepreet-singh123/decamps # Replace with your GitHub repo
   branch: main
 
 media_folder: "public/uploads"
