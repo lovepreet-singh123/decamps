@@ -1,6 +1,4 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: 'export', // This makes Next.js generate static files
+// next.config.mjs
+export default {
+    output: 'export',  // Ensures Next.js generates static files for Netlify
 };
-
-export default nextConfig;
