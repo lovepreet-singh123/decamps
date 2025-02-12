@@ -1,9 +1,9 @@
 import { Col, Row } from "react-bootstrap";
-import { getAchievements } from "./lib/posts";
+// import { getAchievements } from "./lib/posts";
 import "./page.scss";
 
 export default async function Home() {
-    const achievements = await getAchievements(); // Fetch achievements
+    // const achievements = await getAchievements(); // Fetch achievements
 
     return (
         <div>
@@ -11,11 +11,11 @@ export default async function Home() {
                 <div className="container">
                     <div className="content">
                         <Row>
-                            {achievements.map((achievement, index) => (
+                            {/* {achievements.map((achievement, index) => (
                                 <Col md={4} key={index}>
                                     <h2>{achievement.value}</h2>
                                 </Col>
-                            ))}
+                            ))} */}
                         </Row>
                     </div>
                 </div>
