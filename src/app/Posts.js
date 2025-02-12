@@ -19,33 +19,23 @@ export function parseTextToArray(text) {
 }
 
 const Posts = async () => {
-    const response = await getContent("posts");
-    let posts = parseTextToArray(response.content);
-    
     return (
         <div>
             <div className="container">
                 <div className="row">
-                    {
-                        posts.length > 0 &&
-                        posts.map((item, index) => {
-                            return (
-                                <div key={item.title} className="col-4">
+                                <div key={"item.title"} className="col-4">
                                     <div className="card">
                                         <div className="card-header">
-                                            <Image style={{ width: "100%" }} width={400} height={200} src={item.image.replace("public", "")} alt="" />
+                                            {/* <Image style={{ width: "100%" }} width={400} height={200} src={item.image.replace("public", "")} alt="" /> */}
                                         </div>
                                         <div className="card-body">
                                             <div className="card-title">
-                                                {item.title} <div className={`badge rounded-pill ${item.tag === "Block" ? "text-bg-danger" : "text-bg-primary"}`}>{item.tag}</div>
+                                                {"item.title"} <div className={`badge rounded-pill ${"Block" === "Block" ? "text-bg-danger" : "text-bg-primary"}`}>{"item.tag"}</div>
                                             </div>
-                                            <div className="card-text">{item.description}</div>
+                                            <div className="card-text">{"item.description"}</div>
                                         </div>
                                     </div>
                                 </div>
-                            )
-                        })
-                    }
                 </div>
             </div>
         </div >

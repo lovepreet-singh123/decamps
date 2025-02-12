@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const achievementsDir = path.join(process.cwd(), "achievements");
+const achievementsDir = path.join(process.cwd(), "content/achievements");
 
 export async function getAchievements() {
     try {
