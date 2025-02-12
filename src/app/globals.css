@@ -1,4 +1,1 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
-body {
-    color: white;
-}
+@import '~bootstrap/dist/css/bootstrap.min.css';

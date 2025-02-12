@@ -2,36 +2,19 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const sectionsDirectory = path.join(process.cwd(), "content/");
+const contentDirectory = path.join(process.cwd(), "content/blog");
 
-export async function getSections() {
-    // Ensure the directory exists
-    if (!fs.existsSync(sectionsDirectory)) {
-        console.error(`Directory not found: ${sectionsDirectory}`);
-        return [];
+export async function getContent(fileName) {
+    const filePath = path.join(contentDirectory, `${fileName}.md`);
+
+    // Ensure the file exists
+    if (!fs.existsSync(filePath)) {
+        console.error(`File not found: ${filePath}`);
+        return null;
     }
 
-    const fileNames = fs.readdirSync(sectionsDirectory);
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    const { data, content } = matter(fileContents);
 
-    return fileNames
-        .filter((fileName) => fileName.endsWith(".md")) // Ensure only Markdown files
-        .map((fileName) => {
-            const fullPath = path.join(sectionsDirectory, fileName);
-
-            // Ensure the file exists before reading
-            if (!fs.existsSync(fullPath)) {
-                console.error(`File not found: ${fullPath}`);
-                return null;
-            }
-
-            const fileContents = fs.readFileSync(fullPath, "utf8");
-            const { data, content } = matter(fileContents);
-
-            return {
-                slug: fileName.replace(/\.md$/, ""),
-                ...data,
-                content,
-            };
-        })
-        .filter(Boolean); // Remove any null values if a file was missing
+    return { ...data, content };
 }
