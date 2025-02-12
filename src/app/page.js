@@ -1,8 +1,7 @@
-import { Col, Row } from "react-bootstrap";
 // import { getAchievements } from "./lib/posts";
-import "./page.scss";
-import DynamicSection from "./DynamicSection";
 import Achievements from "./Achievements";
+import "./page.scss";
+import Posts from "./Posts";
 
 export default async function Home() {
     // const achievements = await getAchievements(); // Fetch achievements
@@ -10,6 +9,7 @@ export default async function Home() {
     return (
         <div>
             <Achievements />
+            <Posts />
             {/* <DynamicSection /> */}
         </div>
     );
