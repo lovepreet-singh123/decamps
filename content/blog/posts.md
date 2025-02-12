@@ -11,3 +11,11 @@ Grade A office building located in prime business district with stable rental in
 Active
 
 \--
+
+public/uploads/dekler-ph-k4xln8zrezw-unsplash.jpg
+
+Investment in tokenized
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, qui.
+
+Block
