@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const contentDirectory = path.join(process.cwd(), "content/blog");
+const contentDirectory = path.join(process.cwd(), "content/");
 
 export async function getContent(fileName) {
     const filePath = path.join(contentDirectory, `${fileName}.md`);

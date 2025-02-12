@@ -1,15 +1,15 @@
-// import { getAchievements } from "./lib/posts";
 import Achievements from "./Achievements";
+import { getAchievements } from "./lib/getAchievements";
 import "./page.scss";
-import Posts from "./Posts";
 
 export default async function Home() {
-    // const achievements = await getAchievements(); // Fetch achievements
+    const achievements = await getAchievements(); // Fetch achievements
+    console.log('achievements: ', achievements);
 
     return (
         <div>
             <Achievements />
-            <Posts />
+            {/* <Posts /> */}
             {/* <DynamicSection /> */}
         </div>
     );
