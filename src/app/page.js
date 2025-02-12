@@ -1,19 +1,25 @@
-import Link from "next/link";
-import { getPosts } from "./lib/posts";
+import { Col, Row } from "react-bootstrap";
+import { getAchievements } from "./lib/posts";
+import "./page.scss";
 
 export default async function Home() {
-    const posts = await getPosts(); // Fetch markdown files
+    const achievements = await getAchievements(); // Fetch achievements
 
     return (
         <div>
-            <h1>Blog Posts</h1>
-            <ul>
-                {posts.map((post) => (
-                    <li key={post.slug}>
-                        <Link href={`/blog/${post.slug}`}>{post.title}</Link>
-                    </li>
-                ))}
-            </ul>
+            <section className="achieve">
+                <div className="container">
+                    <div className="content">
+                        <Row>
+                            {achievements.map((achievement, index) => (
+                                <Col md={4} key={index}>
+                                    <h2>{achievement.value}</h2>
+                                </Col>
+                            ))}
+                        </Row>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
