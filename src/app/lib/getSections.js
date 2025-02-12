@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const sectionsDirectory = path.join(process.cwd(), "content/sections");
+const sectionsDirectory = path.join(process.cwd(), "content/");
 
 export async function getSections() {
     // Ensure the directory exists
