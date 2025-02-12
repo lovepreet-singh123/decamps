@@ -16,10 +16,6 @@ date: 2025-02-12T10:45:00.000Z
 
 
 
-<script>\
-console.log("lovepreet")\
-</script>
-
 
 
 <div class="container text-center mt-5">        <h1>About Us</h1>        <div class="row mt-4">            <div class="col-md-4">                <div class="box">                    <h3>Our Mission</h3>                    <p>We strive to provide quality services.</p>                    <button class="btn btn-primary">Learn More</button>                </div>            </div>            <div class="col-md-4">                <div class="box">                    <h3>Our Vision</h3>                    <p>Innovating for a better future always.</p>                    <button class="btn btn-primary">Discover</button>                </div>            </div>            <div class="col-md-4">                <div class="box">                    <h3>Our Values</h3>                    <p>Integrity, excellence, and commitment.</p>                    <button class="btn btn-primary">Learn More</button>                </div>            </div>        </div>    </div>
