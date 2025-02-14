@@ -1,5 +1,5 @@
 ---
-title: Feature-Rich Cryptocurrency Exchange Software Development
+title: Feature-Rich Cryptocurrency Exchange Software Development Ankit
 image: /uploads/crypto-exchange.png
 token_image: /uploads/dall·e-2025-01-30-18.41.44-a-gold-coin-with-the-text-gldb-t-engraved-on-its-surface.-the-text-should-be-bold-and-clearly-visible-with-no-extra-symbols-or-letters.-the-coin-ha.webp
 isActive: active
