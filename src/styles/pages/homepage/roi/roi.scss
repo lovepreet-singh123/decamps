@@ -1,0 +1,9 @@
+@use "../../../../../public/assets/theme/_var.scss" as *;
+
+.roi_design {
+    background: url("../../../../../public/assets/images/roi-bg.png") center/cover no-repeat;
+
+    .design_in {
+        padding: 17.25rem 0;
+    }
+}
