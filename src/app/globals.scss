@@ -1,5 +1,83 @@
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@use "../styles/index.scss";
+@use  '../../public/assets/theme/_var.scss' as *;
+@import "~bootstrap/scss/bootstrap";
 
-img {
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $basefont;
+}
+
+img,
+svg,
+canvas,
+video {
     max-width: 100%;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+a,
+span {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px $white inset !important;
+    -webkit-text-fill-color: $black !important;
+    caret: $white;
+    transition: 4000s ease-in-out;
+}
+
+.clickable {
+    cursor: pointer !important;
+}
+
+.container-fluid,
+.container {
+    padding-inline: 1.5rem;
 }
