@@ -4,6 +4,7 @@ import Roi from "@/components/pages/homepage/roi/roi";
 import "./page.scss";
 import Banner from "@/components/pages/homepage/banner/banner";
 import Value from "@/components/pages/homepage/value/value";
+import Testimonials from "@/components/pages/homepage/testimonials/testimonials";
 
 export default async function Home() {
     return (
@@ -12,6 +13,7 @@ export default async function Home() {
                 <Header />
                 <Banner />
                 <Value />
+                <Testimonials />
                 <Roi />
                 <Footer />
             </div>

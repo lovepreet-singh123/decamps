@@ -3,7 +3,6 @@ import { Col, Row } from "react-bootstrap";
 import Image from "next/image";
 import banner from '../../../../../public/assets/banner.png';
 import trust from "../../../../../public/assets/trust.png";
-import "../../../../styles/pages/banner/banner.scss";
 import Commonbtn from "@/components/common/commonbtn/commonbtn";
 
 const Banner = () => {

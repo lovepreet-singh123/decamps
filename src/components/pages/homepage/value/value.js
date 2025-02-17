@@ -1,6 +1,5 @@
 import React from 'react';
 import { GlobeIcon, PeopleIcon, PlusIcon } from "../../../../../public/assets/icons/icons";
-import "../../../../styles/pages/value/value.scss";
 
 const Value = () => {
 

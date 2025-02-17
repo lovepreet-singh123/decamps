@@ -1,6 +1,6 @@
 @use "../styles/index.scss";
 @use '../../public/assets/theme/_var.scss' as *;
-@import "~bootstrap/scss/bootstrap";
+@use "~bootstrap/scss/bootstrap";
 
 html {
     font-size: 62.5%;

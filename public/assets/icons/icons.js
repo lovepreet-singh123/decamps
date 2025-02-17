@@ -68,8 +68,17 @@ export function PlusIcon() {
     );
 }
 
+export const StarIcon = () =>
+    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 0.5L10.1254 5.57459L15.6085 6.02786L11.439 9.6174L12.7023 14.9721L8 12.116L3.29772 14.9721L4.56098 9.6174L0.391548 6.02786L5.87457 5.57459L8 0.5Z" fill="white" />
+    </svg>
 
+export const RightArrow2 = () =>
+    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 0.579102L6.59 1.9891L12.17 7.5791H0V9.5791H12.17L6.59 15.1691L8 16.5791L16 8.5791L8 0.579102Z" fill="white" />
+    </svg>
 
-
-
-
+export const LeftArrow = () =>
+    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 7.5791H3.83L9.42 1.9891L8 0.579102L0 8.5791L8 16.5791L9.41 15.1691L3.83 9.5791H16V7.5791Z" fill="white" />
+    </svg>
