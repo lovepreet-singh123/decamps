@@ -1,17 +1,55 @@
 @use '../../../../../public/assets/theme/_var.scss' as *;
 
 .tokenization {
+    padding: 12rem 0;
+
+    @media (max-width:767px) {
+        padding: 6rem 0;
+    }
+
     .container {
         max-width: 163rem;
     }
 
+    .heading {
+        text-align: center;
+
+        h2 {
+            font-weight: 200;
+            font-size: 8rem;
+            line-height: 7rem;
+            margin-top: 2rem;
+            color: $baseclr;
+
+            @media (max-width:1199px) {
+                font-size: 6rem;
+            }
+
+            @media (max-width:767px) {
+                font-size: 4rem;
+                line-height: 5rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+
     .token_in {
+        margin-top: 6rem;
+
+        @media (max-width:767px) {
+            margin-top: 4rem;
+        }
+
         .row {
             row-gap: 6rem;
             margin: 0 -0.6rem;
 
             @media (max-width: 1679px) {
                 margin: -0.75rem;
+            }
+
+            @media (max-width: 1199px) {
+                row-gap: 2rem;
             }
 
             >div {
@@ -24,19 +62,35 @@
 
             .col-xl-6 {
                 width: 44.6%;
+
+                @media (max-width: 1199px) {
+                    width: 50%;
+                }
+
+                @media (max-width: 575px) {
+                    width: 100%;
+                }
             }
 
             .col-xl-3 {
                 width: calc((100% - 44.6%)/2);
+
+                @media (max-width: 1199px) {
+                    width: 50%;
+                }
+
+                @media (max-width: 575px) {
+                    width: 100%;
+                }
             }
         }
 
         .token_card {
             display: flex;
+            align-items: center;
             flex-direction: column;
-            padding: 7rem 5rem 2rem;
+            padding: 5rem 5rem 2rem;
             border-radius: 3.6rem;
-            text-align: center;
             background: linear-gradient(0deg, rgba(#fafdff, 1) 0%, rgba(#f2faff, 1) 142.54%) padding-box,
                 linear-gradient(331.86deg, rgba(34, 125, 242, 0) 22.89%, #227DF2 55.12%, rgba(34, 125, 242, 0) 87.78%) border-box;
 
@@ -48,6 +102,11 @@
             position: relative;
             z-index: 1;
             height: 100%;
+
+            @media (max-width: 767px) {
+                padding: 2rem;
+                border-radius: 2rem;
+            }
 
             &:before {
                 position: absolute;
@@ -68,34 +127,52 @@
             .card_info {
                 text-align: left;
 
+                @media (max-width: 575px) {
+                    text-align: center;
+                }
+
                 h3 {
                     font-size: 4rem;
                     font-weight: 400;
                     line-height: 4rem;
+                    color: $secondaryclr;
 
-                    @media (max-width: 1679px) {
-                        font-size: 1.8rem;
-                        line-height: 2rem;
-                        margin-top: 1rem;
+                    @media (max-width: 1399px) {
+                        font-size: 2.8rem;
+                        line-height: 3.2rem;
+                    }
+
+                    @media (max-width: 575px) {
+                        font-size: 2rem;
+                        line-height: 2.4rem;
                     }
                 }
 
                 p {
                     font-size: 2rem;
                     font-weight: 400;
-                    line-height: 2.5rem;
+                    line-height: 2.4rem;
                     margin-top: 0.5rem;
+                    color: $textclr;
 
-                    @media (max-width: 1679px) {
-                        font-size: 1.4rem;
+                    @media (max-width: 1399px) {
+                        font-size: 1.6rem;
                         line-height: 2.2rem;
-                        margin-top: 0.6rem;
                     }
                 }
             }
 
             img {
                 text-align: center;
+
+                @media (max-width: 767px) {
+                    width: 18rem;
+                    margin-top: 1rem;
+                }
+
+                @media (max-width: 575px) {
+                    width: 15rem;
+                }
 
                 &.how_decide {
                     margin-bottom: -2rem;
@@ -104,12 +181,20 @@
 
             &.partner {
                 flex-direction: column-reverse;
+                justify-content: flex-end;
 
                 &:before {
                     background-position: 100% 40px;
                     background-size: 100% 70%;
                 }
+
+                img {
+                    @media (max-width: 767px) {
+                        margin: 0 0 1.5rem;
+                    }
+                }
             }
+
             &.fund {
                 flex-direction: column-reverse;
 

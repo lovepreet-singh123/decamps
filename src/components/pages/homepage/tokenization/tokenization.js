@@ -13,10 +13,12 @@ const Tokenization = () => {
     return (
         <section className='tokenization'>
             <Container>
-                <h2>Our Real Estate Tokenization Platform</h2>
+                <div className='heading'>
+                    <h2>Our Real Estate Tokenization Platform</h2>
+                </div>
                 <div className='token_in'>
                     <Row>
-                        <Col xl={6}>
+                        <Col lg={6} xl={6}>
                             <div className="token_card">
                                 <div className='card_info'>
                                     <h3>Simplicity</h3>
@@ -25,7 +27,7 @@ const Tokenization = () => {
                                 <Image src={invest} alt="invest-img" />
                             </div>
                         </Col>
-                        <Col xl={3}>
+                        <Col lg={6} xl={3}>
                             <div className="token_card partner">
                                 <div className='card_info'>
                                     <h3>Trusted partners </h3>
@@ -34,7 +36,7 @@ const Tokenization = () => {
                                 <Image src={partner} alt="partner-img" />
                             </div>
                         </Col>
-                        <Col xl={3}>
+                        <Col lg={6} xl={3}>
                             <div className="token_card">
                                 <div className='card_info'>
                                     <h3>How Much? You decide</h3>
@@ -43,7 +45,7 @@ const Tokenization = () => {
                                 <Image src={invest_fund} alt="invest_fund-img" className='how_decide' />
                             </div>
                         </Col>
-                        <Col xl={3}>
+                        <Col lg={6} xl={3}>
                             <div className="token_card">
                                 <div className='card_info'>
                                     <h3>Diversification
@@ -53,7 +55,7 @@ const Tokenization = () => {
                                 <Image src={key} alt="key-img" />
                             </div>
                         </Col>
-                        <Col xl={6}>
+                        <Col lg={6} xl={6}>
                             <div className="token_card fund">
                                 <div className='card_info'>
                                     <h3>Crowd Funded</h3>
@@ -62,7 +64,7 @@ const Tokenization = () => {
                                 <Image src={fund} alt="fund-img" />
                             </div>
                         </Col>
-                        <Col xl={3}>
+                        <Col lg={6} xl={3}>
                             <div className="token_card">
                                 <div className='card_info'>
                                     <h3>Projected Yeild</h3>

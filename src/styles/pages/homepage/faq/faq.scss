@@ -1,0 +1,132 @@
+@use '../../../../../public/assets/theme/_var.scss' as *;
+
+.faq_sec {
+    padding: 12rem 0;
+    @media (max-width:767px) {
+        padding: 6rem 0;
+    }
+
+    .heading {
+        text-align: center;
+
+        h4 {
+            font-size: 4rem;
+            line-height: 4rem;
+            color: $secondaryclr;
+            @media (max-width:767px) {
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+            }
+        }
+
+        h2 {
+            font-weight: 200;
+            font-size: 8rem;
+            line-height: 7rem;
+            margin-top: 2rem;
+            color: $baseclr;
+            @media (max-width:1199px) {
+                font-size: 6rem;
+            }
+            @media (max-width:767px) {
+                font-size: 4rem;
+                line-height: 5rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .faq_in {
+        margin-top: 10rem;
+        @media (max-width:767px) {
+            margin-top: 5rem;
+        }
+        .accordion {
+            background-color: transparent;
+            --bs-accordion-btn-bg: $white;
+            margin-top: 5rem;
+
+            .accordion-item {
+                background: linear-gradient(0.23deg, rgba(117, 196, 255, 0) -28.35%, rgba(117, 196, 255, 0.1) 99.8%);
+                border-radius: 2rem;
+                border: 0;
+                padding: 4.2rem;
+                margin-bottom: 3rem;
+                border-radius: 1.2rem;
+                overflow: hidden;
+                @media (max-width:1199px) {
+                    padding: 2rem;
+                    margin-bottom: 2rem;
+                }
+                @media (max-width:575px) {
+                    padding: 0.8rem;
+                }
+
+                .accordion-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                }
+
+                .accordion-button {
+                    padding: 0; 
+                    background-color: transparent;
+                    box-shadow: none;
+
+                    @media (max-width: 767px) {
+                        padding: 1.5rem;
+                    }
+
+                    p {
+                        color: $secondaryclr;
+                        font-size: 4rem;
+                        font-weight: 400;
+                        @media (max-width: 1199px) {
+                            font-size: 2.6rem;
+                            padding-right: 4rem;
+                        }
+                        @media (max-width: 767px) {
+                            font-size: 2rem;
+                        }
+                    }
+
+                    &::after {
+                        opacity: 0.3;
+                        height: 1.4rem;
+                        width: 2.6rem;
+                        background-size: 2.6rem;
+                        margin-left: auto;
+                        transition: transform 0.3s;
+                        background-image: url("../../../../../public/assets/arrow.svg");
+
+                        @media (max-width:767px) {
+                            width: 1.8rem;
+                            background-size: 1.8rem;
+                        }
+                    }
+
+                    &:not(.collapsed)::after {
+                        transform: rotate(180deg);
+                        opacity: 1;
+                    }
+                }
+
+                .accordion-body {
+                    color: $textclr;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    line-height: 2.5rem;
+                    padding-left: 0;
+                    padding-bottom: 0;
+
+                    @media (max-width: 767px) {
+                        padding: 1.5rem;
+                        padding-top: 0;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
