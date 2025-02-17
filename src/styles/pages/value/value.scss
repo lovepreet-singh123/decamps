@@ -1,0 +1,37 @@
+@use "../../../../public/assets/theme/_var.scss" as *;
+
+.value {
+    background-color: $black1D3252;
+    display: flex;
+    align-items: center;
+    padding: 8.3rem 16rem;
+
+    &_inner {
+        max-width: 52rem;
+        width: 100%;
+
+        &_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                margin-right: 1rem;
+            }
+
+            p {
+                color: $white;
+                font-size: 2rem;
+                font-weight: 400;
+            }
+
+        }
+    }
+
+    h2 {
+        font-size: 9rem;
+        font-weight: 600;
+        color: $white;
+        text-align: center;
+    }
+}
