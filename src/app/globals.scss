@@ -1,5 +1,5 @@
 @use "../styles/index.scss";
-@use  '../../public/assets/theme/_var.scss' as *;
+@use '../../public/assets/theme/_var.scss' as *;
 @import "~bootstrap/scss/bootstrap";
 
 html {
@@ -15,6 +15,7 @@ svg,
 canvas,
 video {
     max-width: 100%;
+    height: auto;
 }
 
 p {
@@ -80,4 +81,10 @@ input:-webkit-autofill:active {
 .container-fluid,
 .container {
     padding-inline: 1.5rem;
+}
+
+.container {
+    @media (min-width: 1680px) {
+        max-width: 163rem;
+    }
 }
