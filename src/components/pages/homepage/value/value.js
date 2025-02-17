@@ -1,6 +1,7 @@
+"use client";
 import React from 'react';
 import { GlobeIcon, PeopleIcon, PlusIcon } from "../../../../../public/assets/icons/icons";
-import "../../../../styles/pages/value/value.scss";
+import { Container } from "react-bootstrap";
 
 const Value = () => {
 
@@ -25,15 +26,19 @@ const Value = () => {
     return (
         <>
             <section className="value">
-                {data.map((item, index) => (
-                    <div className="value_inner" key={index}>
-                        <div className="value_inner_text">
-                            <span>{item.img} </span>
-                            <p>{item.text}</p>
-                        </div>
-                            <h2>{item.value}</h2>+
+                <Container>
+                    <div className="value_content">
+                        {data.map((item, index) => (
+                            <div className="value_content_inner" key={index}>
+                                <div className="value_content_inner_text">
+                                    <span>{item.img} </span>
+                                    <p>{item.text}</p>
+                                </div>
+                                <h2>{item.value}</h2>+
+                            </div>
+                        ))}
                     </div>
-                ))}
+                </Container>
             </section>
         </>
     );
