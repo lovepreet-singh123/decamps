@@ -1,0 +1,137 @@
+@use "../../../../public/assets/theme/_var.scss" as *;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($headerbg, 0.6);
+    backdrop-filter: blur(3.4rem);
+    padding: 2.65rem 0;
+
+    .container {
+        max-width: 163rem;
+    }
+
+    .header_in {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            max-width: 33.1rem;
+        }
+
+        .header_nav {
+            margin-left: auto;
+
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin-right: 5.9rem;
+
+                    a,
+                    .dropdown-toggle {
+                        font-weight: 500;
+                        font-size: 1.8rem;
+                        line-height: 2.2rem;
+                        color: $headerlink;
+                        transition: 300ms ease-in-out;
+
+                        &.active,
+                        &:hover {
+                            color: $baseclr;
+                        }
+                    }
+
+                    .dropdown-toggle {
+                        background-color: transparent;
+                        border: none;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+
+                        &:focus {
+                            background-color: transparent;
+                            box-shadow: none;
+                        }
+
+                        &::after {
+                            border: none;
+                            background-image: url('data:image/svg+xml,<svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.5L7.5 7.5L1 1.5" stroke="%231D3252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+                            width: 1.3rem;
+                            margin-left: 0.8rem;
+                            height: 0.6rem;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            transition: 300ms ease-in-out;
+                        }
+
+                        &:hover {
+                            &::after {
+                                background-image: url('data:image/svg+xml,<svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.5L7.5 7.5L1 1.5" stroke="%23227DF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+                            }
+                        }
+
+                        &[aria-expanded="true"] {
+                            &::after {
+                                rotate: 180deg;
+                            }
+                        }
+                    }
+
+                    .dropdown-menu {
+                        background-color: $white;
+                        border-radius: 2rem;
+                        padding: 2.4rem 2.2rem;
+                        width: 17.3rem !important;
+                        border: none;
+                        margin-top: 8rem;
+
+                        a {
+                            display: block;
+                            font-size: 1.8rem;
+                            white-space: nowrap;
+                            font-weight: 400;
+                            line-height: 1.2rem;
+
+                            &:not(:last-child) {
+                                margin-bottom: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .header_action {
+            display: flex;
+            align-items: center;
+
+            >button {
+                margin-left: 2.1rem;
+            }
+
+            .action_btn {
+                width: 13.9rem;
+                height: 5.2rem;
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                background-color: $white;
+                border: none;
+                outline: none;
+                color: $baseclr;
+                transition: 300ms ease-in-out;
+                border-radius: 5rem;
+
+                &:hover {
+                    background-color: $baseclr;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
