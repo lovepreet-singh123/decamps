@@ -5,7 +5,7 @@ import { RightArrow } from "../../../../public/assets/icons/icons";
 const Commonbtn = (props) => {
     return (
         <>
-            <button className={`common_btn ${props.className}`}>
+            <button className={`common_btn ${props.className || ""}`}>
                 <p>{props.text}</p>
                 <span><RightArrow /></span>
             </button>
