@@ -9,10 +9,6 @@
     backdrop-filter: blur(3.4rem);
     padding: 2.65rem 0;
 
-    .container {
-        max-width: 163rem;
-    }
-
     .header_in {
         display: flex;
         align-items: center;
@@ -36,7 +32,7 @@
                         font-weight: 500;
                         font-size: 1.8rem;
                         line-height: 2.2rem;
-                        color: $headerlink;
+                        color: $secondaryclr;
                         transition: 300ms ease-in-out;
 
                         &.active,
