@@ -1,0 +1,56 @@
+@use "../../../../../public/assets/theme/_var.scss" as *;
+
+.roi_design {
+    background: url("../../../../../public/assets/images/roi-bg.png") center/cover no-repeat;
+
+    .design_in {
+        padding: 17.25rem 0;
+        display: flex;
+        justify-content: center;
+
+        h2 {
+            font-weight: 800;
+            font-size: 30rem;
+            line-height: 21.3rem;
+            border-right: 0.2rem solid $white;
+            padding-right: 6rem;
+            color: $white;
+            margin-right: 6rem;
+
+            span {
+                color: $baseclr;
+                font-weight: 250;
+            }
+        }
+
+        >div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h3 {
+            font-weight: 300;
+            font-size: 7rem;
+            line-height: 5rem;
+            color: $white;
+            margin-bottom: auto;
+
+            span {
+                color: $baseclr;
+                font-weight: 700;
+            }
+        }
+
+        .common_btn {
+            background-color: $secondaryclr;
+            border-color: $whiteF3;
+            margin-top: 5rem;
+
+            p {
+                background-color: $secondaryclr;
+                color: $white;
+                left: calc(100% - 0.2rem);
+            }
+        }
+    }
+}

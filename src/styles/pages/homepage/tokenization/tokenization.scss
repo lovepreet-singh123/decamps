@@ -7,10 +7,6 @@
         padding: 6rem 0;
     }
 
-    .container {
-        max-width: 163rem;
-    }
-
     .heading {
         text-align: center;
 
@@ -18,7 +14,6 @@
             font-weight: 200;
             font-size: 8rem;
             line-height: 7rem;
-            margin-top: 2rem;
             color: $baseclr;
 
             @media (max-width:1199px) {
@@ -164,6 +159,7 @@
 
             img {
                 text-align: center;
+                margin-top: 2.5rem;
 
                 @media (max-width: 767px) {
                     width: 18rem;
@@ -179,7 +175,8 @@
                 }
             }
 
-            &.partner {
+            &.partner,
+            &.fund {
                 flex-direction: column-reverse;
                 justify-content: flex-end;
 
@@ -189,20 +186,15 @@
                 }
 
                 img {
+                    margin: 0 0 2.5rem;
+
                     @media (max-width: 767px) {
                         margin: 0 0 1.5rem;
                     }
                 }
             }
 
-            &.fund {
-                flex-direction: column-reverse;
 
-                &:before {
-                    background-position: 100% 40px;
-                    background-size: 100% 70%;
-                }
-            }
         }
     }
 }

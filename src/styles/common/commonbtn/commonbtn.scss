@@ -1,0 +1,34 @@
+@use "../../../../public/assets/theme/_var.scss" as *;
+
+.common_btn {
+    border: 2px solid $secondaryclr;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    span {
+        width: 6.2rem;
+        height: 6.2rem;
+        border-radius: 50%;
+        background-color: $baseclr;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        position: absolute;
+        left: 90%;
+        background-color: $lightblue;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $secondaryclr;
+        white-space: nowrap;
+        text-align: right;
+    }
+}

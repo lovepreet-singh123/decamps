@@ -1,0 +1,55 @@
+@use "../../../../../public/assets/theme/_var.scss" as *;
+
+.banner {
+    .row {
+        margin: 0;
+
+        >div {
+            padding: 0;
+            background: $lightblue;
+        }
+    }
+
+    &-left {
+        height: 100%;
+        margin: 0 auto;
+        max-width: 72.9rem;
+        width: 100%;
+
+        &-text {
+
+            h1 {
+                text-align: left;
+                padding-top: 12rem;
+                font-size: 10rem;
+                font-weight: 700;
+                color: $secondaryclr;
+
+                span {
+                    color: $baseclr;
+                }
+            }
+
+            p {
+                color: $secondaryclr;
+                font-size: 4rem;
+                font-weight: 400;
+            }
+
+            h6 {
+                color: $secondaryclr;
+                font-size: 1.8rem;
+                padding-right: 6rem;
+                padding-top: 3rem;
+            }
+        }
+
+        .trust {
+            padding-top: 5rem;
+        }
+
+        .common_btn {
+            margin-top: 6rem;
+        }
+    }
+}
