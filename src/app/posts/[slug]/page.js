@@ -22,7 +22,7 @@ export default async function BlogPost({ params }) {
 
     const fileContent = fs.readFileSync(filePath, "utf-8");
     const { data, content } = matter(fileContent);
-    console.log('content: ', content);
+    
 
     return (
         <Container>

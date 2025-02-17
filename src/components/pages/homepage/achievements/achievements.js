@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { getAchievements } from "./lib/getAchievements";
+import { getAchievements } from "../../../../app/lib/getAchievements";
 
 const Achievements = async () => {
     const response = await getAchievements();

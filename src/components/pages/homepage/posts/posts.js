@@ -1,9 +1,7 @@
-import Image from 'next/image'
-import React from 'react'
-import { getBlogs } from './lib/getBlogs'
 import moment from 'moment';
-import { Button } from 'react-bootstrap';
+import Image from 'next/image';
 import Link from 'next/link';
+import { getBlogs } from '../../../../app/lib/getBlogs';
 
 const Posts = async () => {
     const response = await getBlogs();
