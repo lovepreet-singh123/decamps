@@ -1,7 +1,7 @@
 @use "../../../../public/assets/theme/_var.scss" as *;
 
 .common_btn {
-    border: 2px solid $black1D3252;
+    border: 2px solid $secondaryclr;
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
@@ -27,7 +27,7 @@
         background-color: $lightblue;
         font-size: 2rem;
         font-weight: 500;
-        color: $black1D3252;
+        color: $secondaryclr;
         white-space: nowrap;
         text-align: right;
     }

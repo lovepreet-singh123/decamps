@@ -8,6 +8,7 @@
     background-color: rgba($headerbg, 0.6);
     backdrop-filter: blur(3.4rem);
     padding: 2.65rem 0;
+    z-index: 100;
 
     .header_in {
         display: flex;
@@ -84,7 +85,8 @@
                         padding: 2.4rem 2.2rem;
                         width: 17.3rem !important;
                         border: none;
-                        margin-top: 8rem;
+                        margin-top: 1rem;
+                        margin-left: -1.5rem;
 
                         a {
                             display: block;

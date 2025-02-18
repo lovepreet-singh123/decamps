@@ -3,8 +3,7 @@ import Header from "@/components/common/header/header";
 import Roi from "@/components/pages/homepage/roi/roi";
 import Banner from "@/components/pages/homepage/banner/banner";
 import Value from "@/components/pages/homepage/value/value";
-import Explore from "@/components/pages/homepage/explore/explore";
-import "./page.scss";
+import Testimonials from "@/components/pages/homepage/testimonials/testimonials";
 
 export default async function Home() {
     return (
@@ -14,6 +13,7 @@ export default async function Home() {
                 <Banner />
                 <Value />
                 <Explore />
+                <Testimonials />
                 <Roi />
                 <Footer />
             </div>

@@ -1,3 +1,4 @@
+import Commonbtn from '@/components/common/commonbtn/commonbtn'
 import React from 'react'
 import { Container } from 'react-bootstrap'
 
@@ -9,7 +10,7 @@ const Roi = () => {
                     <h2>20<span>%</span></h2>
                     <div>
                         <h3>Project <span>ROI</span> Per Year </h3>
-                        <button type="button">Get Started</button>
+                        <Commonbtn text="Get Started" />
                     </div>
                 </div>
             </Container>
