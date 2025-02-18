@@ -4,6 +4,12 @@ import { useRef, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Slider from 'react-slick';
 import { LeftArrow, RightArrow2, StarIcon } from '../../../../../public/assets/icons/icons';
+import img1 from '../../../../../public/assets/fedex-icon.png'
+import img2 from '../../../../../public/assets/walmart-icon.png'
+import img3 from '../../../../../public/assets/air-bnb.png'
+import img4 from '../../../../../public/assets/hub-spot.png'
+import img5 from '../../../../../public/assets/google-icon.png'
+import img6 from '../../../../../public/assets/microsoft-icon.png'
 
 const Testimonials = () => {
     const testimonials = [
@@ -26,6 +32,9 @@ const Testimonials = () => {
             name: "Rosa Ramos Torrens",
         },
     ]
+    const brands = [img1, img2, img3, img4, img5, img6];
+
+
     const [slideIndex, setSlideIndex] = useState(0);
     const settings = {
         slidesToShow: 3,
@@ -34,8 +43,16 @@ const Testimonials = () => {
         arrows: false,
         beforeChange: (current, next) => setSlideIndex(next)
     };
+
+    const settings1 = {
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+    };
+
     let sliderRef = useRef(null);
-    
+
     const next = () => {
         sliderRef.slickNext();
     };
@@ -102,6 +119,14 @@ const Testimonials = () => {
                         <button type="button" className="slide_arrow next_arrow" onClick={next}><RightArrow2 /></button>
                     </div>
                 </div>
+
+                <Slider {...settings1} className='brand_slider'>
+                    {brands.map((brand, index) => (
+                        <div className="brand_box" key={index}>
+                            <Image src={brand} alt={`Brand ${index + 1}`} />
+                        </div>
+                    ))}
+                </Slider>
             </Container>
         </section>
     )
