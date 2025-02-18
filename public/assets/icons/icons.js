@@ -82,3 +82,14 @@ export const LeftArrow = () =>
     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M16 7.5791H3.83L9.42 1.9891L8 0.579102L0 8.5791L8 16.5791L9.41 15.1691L3.83 9.5791H16V7.5791Z" fill="white" />
     </svg>
+export const ArrowIcon = () =>
+    <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1.19922 6.75453H14.7174M8.80319 1.31836L14.7174 6.75453L8.80319 12.1907"
+            stroke="white"
+            strokeWidth="1.55319"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+

@@ -8,6 +8,7 @@ import Explore from "@/components/pages/homepage/explore/explore";
 import Tokenization from "@/components/pages/homepage/tokenization/tokenization";
 import Faq from "@/components/pages/homepage/faq/faq";
 import "./page.scss";
+import GetTouch from "@/components/pages/homepage/get-touch/get-touch";
 
 export default async function Home() {
     return (
@@ -21,6 +22,7 @@ export default async function Home() {
                 <Explore />
                 <Roi />
                 <Faq />
+                <GetTouch/>
                 <Footer />
             </div>
             {/* <Achievements />
