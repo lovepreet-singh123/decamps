@@ -1,107 +1,115 @@
 @use "../../../../../../public/assets/theme/_var.scss" as *;
 
-.explore {
-    .slick {
-        &-slide {
-            max-width: 37.3rem;
-            width: 100% !important;
+.explore-card {
+    border: 1px solid $grey;
+    border-radius: 2rem;
+
+    &-image {
+        img {
+            border-radius: 2rem 2rem 0 0;
+            width: 100%;
         }
     }
 
-    &-card {
-        border: 1px solid $grey;
-        border-radius: 2rem;
+    &-content {
+        padding: 1.6rem 2rem;
 
-        &-image {
-            img {
-                border-radius: 2rem 2rem 0 0;
-            }
+        @media(max-width: 1679px) {
+            padding: 1.4rem;
         }
 
-        &-content {
-            padding: 1.6rem 2rem;
-
-            &-text {
-                >div {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-
-                    span {
-                        background: #16A34A1A;
-                        color: $green;
-                        font-size: 1.2rem;
-                        font-weight: 500;
-                        padding: 0.7rem 1rem;
-                        border-radius: 1rem;
-                    }
-                }
-
-                p {
-                    color: $black384B68;
-                    font-size: 1.2rem;
-                }
-            }
-
-            &-cards {
+        &-text {
+            >div {
                 display: flex;
                 align-items: center;
-                justify-content: flex-start;
-                gap: 1.2rem;
-                padding-top: 1rem;
+                justify-content: space-between;
 
                 span {
-                    background: #3E95D11A;
-                    padding: 0.7rem 1.6rem;
-                    border-radius: 1rem;
+                    background: #16A34A1A;
+                    color: $green;
                     font-size: 1.2rem;
-                    color: $baseclr;
                     font-weight: 500;
+                    padding: 0.7rem 1rem;
+                    border-radius: 1rem;
                 }
-            }
 
-            ul {
+                h3 {
+                    font-size: 1.6rem;
 
-                li {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding-top: 1.8rem;
-
-                    div {
-                        p {
-                            font-size: 1.2rem;
-                            color: $black384B68;
-                            padding-top: 0.6rem;
-                        }
-
-                        h3 {
-                            color: $black384B68;
-                            font-weight: 600;
-                            font-size: 1.6rem;
-                        }
-
-                        &:last-child {
-                            text-align: end;
-                        }
+                    @media(max-width: 1679px) {
+                        font-size: 1.4rem;
                     }
                 }
             }
 
-            button {
-                margin-top: 2rem;
-                padding-inline: 2rem;
-                border: none;
-                font-size: 1.8rem;
-                font-weight: 500;
-                background-color: $baseclr;
-                border-radius: 1.2rem;
-                width: 100%;
-                color: $white;
-                padding: 1.1rem;
+            p {
+                color: $black384B68;
+                font-size: 1.2rem;
             }
         }
 
+        &-cards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1.2rem;
+            padding-top: 1rem;
 
+            span {
+                background: #3E95D11A;
+                padding: 0.7rem 1.6rem;
+                border-radius: 1rem;
+                font-size: 1.2rem;
+                color: $baseclr;
+                font-weight: 500;
+            }
+        }
+
+        ul {
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 1.8rem;
+
+                div {
+                    p {
+                        font-size: 1.2rem;
+                        color: $black384B68;
+                        padding-top: 0.6rem;
+                    }
+
+                    h3 {
+                        color: $black384B68;
+                        font-weight: 600;
+                        font-size: 1.6rem;
+                    }
+
+                    &:last-child {
+                        text-align: end;
+                    }
+                }
+            }
+        }
+
+        button {
+            margin-top: 2rem;
+            padding-inline: 2rem;
+            border: none;
+            font-size: 1.8rem;
+            font-weight: 500;
+            background-color: $baseclr;
+            border-radius: 1.2rem;
+            width: 100%;
+            color: $white;
+            padding: 1.1rem;
+
+            @media(max-width: 1199px) {
+                padding: 0.7rem;
+                font-size: 1.6rem;
+            }
+        }
     }
 }

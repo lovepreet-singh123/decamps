@@ -2,36 +2,90 @@
 
 .value {
     background-color: $secondaryclr;
-    display: flex;
-    align-items: center;
-    padding: 8.3rem 16rem;
 
-    &_inner {
-        max-width: 52rem;
-        width: 100%;
+    &_content {
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8.3rem 16rem;
 
-        &_text {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        @media(max-width: 1679px) {
+            padding: 6rem 12rem;
+        }
+
+        &_inner {
+            margin-bottom: 2rem ;
+            text-align: left ;
+
+            @media(max-widdth: 991px) {
+            }
+
+            &_text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    margin-right: 1rem;
+
+                    svg {
+                        width: 4.2rem;
+                        height: 4.2rem;
+
+                        @media(max-width: 1679px) {
+                            width: 3.2rem;
+                            height: 3.2rem;
+                        }
+                    }
+                }
+
+                p {
+                    color: $white;
+                    font-size: 2rem;
+                    font-weight: 300;
+
+                    @media(max-width: 1679px) {
+                        font-size: 1.6rem;
+                    }
+
+                    @media(max-width: 1199px) {
+                        font-size: 1.4rem;
+                    }
+                }
+
+            }
+        }
+
+        h2 {
+            font-size: 9rem;
+            font-weight: 600;
+            color: $white;
+            text-align: center;
+
+            @media(max-width: 1679px) {
+                font-size: 7rem;
+            }
+
+            @media(max-width: 1199px) {
+                font-size: 5rem;
+            }
+
+            @media(max-width: 991px) {
+                font-size: 3rem;
+            }
 
             span {
-                margin-right: 1rem;
-            }
+                font-weight: 100;
+                font-size: 6rem;
 
-            p {
-                color: $white;
-                font-size: 2rem;
-                font-weight: 400;
-            }
+                @media(max-width: 991px) {
+                    font-size: 4rem;
+                }
 
+                @media(max-width: 767px) {
+                    font-size: 2.5rem;
+                }
+            }
         }
-    }
-
-    h2 {
-        font-size: 9rem;
-        font-weight: 600;
-        color: $white;
-        text-align: center;
     }
 }

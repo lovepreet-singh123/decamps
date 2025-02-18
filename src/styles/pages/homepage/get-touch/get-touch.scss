@@ -1,0 +1,178 @@
+@use '../../../../../public/assets/theme/_var.scss' as *;
+
+.get_touch {
+    .container {
+        max-width: 162.6rem;
+    }
+
+    .get_touch_in {
+        background: linear-gradient(267.03deg, #4F82D0 4.01%, #1D3252 57.55%, #2A5CA9 114.97%);
+        padding-right: 15.1rem;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+
+        @media (max-width:1599px) {
+            padding-right: 10rem;
+        }
+
+        @media (max-width:1399px) {
+            padding-right: 5rem;
+        }
+
+        @media (max-width:991px) {
+            flex-direction: column;
+            padding: 3rem;
+        }
+
+        .get_touch_img {
+
+            img {
+                filter: drop-shadow(70px 40px 50px rgba($black, 0.251));
+                max-width: 73.2rem;
+
+
+                @media (max-width:1599px) {
+                    max-width: 55rem;
+                }
+
+                @media (max-width:991px) {
+                    max-width: 45rem;
+                }
+
+                @media (max-width:767px) {
+                    max-width: 30rem;
+
+                }
+
+                @media (max-width:575px) {
+                    max-width: 25rem;
+                }
+
+            }
+        }
+
+        .get_touch_content {
+            width: 100%;
+            margin-left: auto;
+
+            @media (max-width:991px) {
+                margin-top: 2rem;
+            }
+
+            h2 {
+                font-weight: 400;
+                font-size: 5rem;
+                line-height: 6.3rem;
+                color: $white;
+
+                @media (max-width:1599px) {
+                    font-size: 4rem;
+                    line-height: 5rem;
+                }
+
+                @media (max-width:1399px) {
+                    font-size: 3.2rem;
+                    line-height: 4.2rem;
+                }
+
+                @media (max-width:991px) {
+                    text-align: center;
+                }
+
+                @media (max-width:767px) {
+                    font-size: 2.2rem;
+                    line-height: 3.2rem;
+                }
+
+                @media (max-width:991px) {
+                    font-size: 1.8rem;
+                    line-height: 2.6rem;
+                }
+
+            }
+
+            .get_input_sec {
+                margin-top: 4rem;
+                display: flex;
+                align-items: flex-start;
+                gap: 1.5rem;
+                max-width: 67.3rem;
+                width: 100%;
+
+                @media (max-width:1299px) {
+                    flex-direction: column;
+                }
+
+                @media (max-width:991px) {
+                    align-items: center;
+                }
+
+                @media (max-width:575px) {
+                    margin-top: 2rem;
+                }
+
+
+
+                .get_input {
+                    max-width: 43.4rem;
+                    width: 100%;
+                    flex-shrink: 0;
+
+                    input {
+                        border: .1rem solid transparent;
+                        background: linear-gradient(90deg, #4f6380, #607dab) padding-box, linear-gradient(267.03deg, #00F0FF 4.01%, #5200FF 57.55%, #FF2DF7 114.97%) border-box;
+                        backdrop-filter: blur(40px);
+                        padding: 1.8rem 3.4rem;
+                        width: 100%;
+                        color: $white;
+                        border-radius: 2.3rem;
+                        font-weight: 400;
+                        font-size: 1.9rem;
+                        line-height: 2.4rem;
+                        height: 5rem;
+                        outline: none;
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &::placeholder {
+                            color: $white;
+                        }
+                    }
+
+
+                }
+
+                .error {
+                    margin-top: .4rem;
+                    color: rgb(255, 11, 11);
+                }
+
+                .touch_btn {
+                    border: 1px solid transparent;
+                    background: linear-gradient(180deg, $black, $black) padding-box, linear-gradient(267.03deg, #00F0FF 4.01%, #5200FF 57.55%, #FF2DF7 114.97%) border-box;
+                    outline: none;
+                    color: $white;
+                    height: 5rem;
+                    border-radius: 5rem;
+                    font-weight: 400;
+                    font-size: 1.9rem;
+                    line-height: 2.4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 2.8rem;
+                    width: 22.4rem;
+
+                    @media (max-width:575px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
