@@ -1,12 +1,13 @@
 @use "../../../../../public/assets/theme/_var.scss" as *;
 
 .banner {
+    background: $lightblue;
+
     .row {
         margin: 0;
 
         >div {
             padding: 0;
-            background: $lightblue;
         }
     }
 
@@ -15,12 +16,12 @@
         margin: 0 auto;
         max-width: 72.9rem;
         width: 100%;
+        padding-top: 12rem;
 
         &-text {
 
             h1 {
                 text-align: left;
-                padding-top: 12rem;
                 font-size: 10rem;
                 font-weight: 700;
                 color: $secondaryclr;

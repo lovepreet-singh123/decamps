@@ -1,0 +1,29 @@
+@use "../../../../../public/assets/theme/_var.scss" as *;
+
+.explore {
+    padding: 12rem 0;
+
+    h2 {
+        font-size: 8rem;
+        font-weight: 200;
+        max-width: 133.2rem;
+        width: 100%;
+        margin: 0 auto;
+        color: $baseclr;
+        padding-bottom: 6rem;
+        text-align: center;
+    }
+
+    .slick {
+        &-slide {
+            max-width: 37.3rem;
+            width: 100%;
+            padding: 0 1.5rem;
+        }
+
+        &-list {
+            margin: 0 -1.5rem;
+        }
+    }
+
+}
