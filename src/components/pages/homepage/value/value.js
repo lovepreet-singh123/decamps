@@ -1,9 +1,9 @@
-"use client";
 import React from 'react';
 import { GlobeIcon, PeopleIcon, PlusIcon } from "../../../../../public/assets/icons/icons";
 import { Col, Container, Row } from "react-bootstrap";
+import { getAchievements } from "@/app/lib/getAchievements";
 
-const Value = () => {
+const Value = async () => {
 
     const data = [
         {
@@ -23,12 +23,19 @@ const Value = () => {
         }
     ]
 
+    const response = await getAchievements();
+    // console.log(response);
+    let newdata = data.map((item, index) => {
+        item.text = response[index].title;
+        item.value = response[index].content;
+        return item;
+    })
     return (
         <>
             <section className="value">
                 <Container>
                     <Row className="value_content">
-                        {data.map((item, index) => (
+                        {newdata.map((item, index) => (
                             <Col xs={12} md={6} lg={4} className="value_content_inner" key={index}>
                                 <div className="value_content_inner_text">
                                     <span>{item.img} </span>

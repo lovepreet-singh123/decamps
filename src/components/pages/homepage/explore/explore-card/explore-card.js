@@ -7,7 +7,8 @@ const ExploreCard = (props) => {
         <>
             <div className="explore-card">
                 <div className="explore-card-image">
-                    <Image src={card} alt="banner_img" />
+                    {/* <Image src={props.card} alt="banner_img" /> */}
+                    <Image style={{ width: "100%", height: "200px", objectFit: "cover" }} width={400} height={200} src={props.img} alt="" />
                 </div>
                 <div className="explore-card-content">
                     <div className="explore-card-content-text">
@@ -26,17 +27,17 @@ const ExploreCard = (props) => {
                         <li>
                             <div>
                                 <p>Min investment</p>
-                                <h3>{props.invest}</h3>
+                                <h3>{"$50k"}</h3>
                             </div>
                             <div>
                                 <p>Proj. Yield</p>
-                                <h3>{props.yield}</h3>
+                                <h3>{"100%"}</h3>
                             </div>
                         </li>
                         <li>
                             <div>
                                 <p>NAV</p>
-                                <h3>{props.nav}</h3>
+                                <h3>{"$1.00"}</h3>
                             </div>
                             <div>
                                 <p>End date</p>
