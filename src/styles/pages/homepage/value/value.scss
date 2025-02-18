@@ -13,17 +13,24 @@
             padding: 6rem 12rem;
         }
 
-        &_inner {
-            margin-bottom: 2rem ;
-            text-align: left ;
+        @media(max-width: 991px) {
+            padding: 3rem 12rem;
+        }
 
-            @media(max-widdth: 991px) {
-            }
+        &_inner {
+            margin-bottom: 2rem;
+            text-align: left;
+
+            @media(max-widdth: 991px) {}
 
             &_text {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @media(max-width: 991px) {
+                    justify-content: flex-start;
+                }
 
                 span {
                     margin-right: 1rem;

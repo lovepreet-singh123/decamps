@@ -8,7 +8,7 @@ const Posts = async () => {
 
     return (
         <div>
-            <div className="container">
+            <div className="container py-5 my-5">
                 <div className="row">
                     {
                         response.length > 0 ?
