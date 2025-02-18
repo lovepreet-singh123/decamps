@@ -5,6 +5,8 @@ import Banner from "@/components/pages/homepage/banner/banner";
 import Value from "@/components/pages/homepage/value/value";
 import Testimonials from "@/components/pages/homepage/testimonials/testimonials";
 import Explore from "@/components/pages/homepage/explore/explore";
+import Tokenization from "@/components/pages/homepage/tokenization/tokenization";
+import Faq from "@/components/pages/homepage/faq/faq";
 import "./page.scss";
 
 export default async function Home() {
@@ -14,9 +16,11 @@ export default async function Home() {
                 <Header />
                 <Banner />
                 <Value />
+                <Tokenization />
                 <Testimonials />
                 <Explore />
                 <Roi />
+                <Faq />
                 <Footer />
             </div>
             {/* <Achievements />
