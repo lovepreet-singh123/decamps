@@ -1,9 +1,7 @@
 @use '../../../../../public/assets/theme/_var.scss' as *;
 
 .get_touch {
-    .container {
-        max-width: 162.6rem;
-    }
+    padding: 12rem 0;
 
     .get_touch_in {
         background: linear-gradient(267.03deg, #4F82D0 4.01%, #1D3252 57.55%, #2A5CA9 114.97%);
