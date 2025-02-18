@@ -1,13 +1,6 @@
 @use "../../../../../../public/assets/theme/_var.scss" as *;
 
 .explore {
-    .slick {
-        &-slide {
-            max-width: 37.3rem;
-            width: 100% !important;
-        }
-    }
-
     &-card {
         border: 1px solid $grey;
         border-radius: 2rem;

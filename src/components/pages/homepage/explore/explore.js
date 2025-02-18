@@ -10,13 +10,22 @@ const Explore = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         centerPadding: '50px',
         autoplay: true,
     };
 
     const data = [
+        {
+            heading: "Premium Office Tower",
+            position: "Active",
+            description: "Grade A office building located in prime business district with stable rental income.",
+            invest: "$50k",
+            yield: "100%",
+            nav: "$1.00",
+            date: "July 05, 2025"
+        },
         {
             heading: "Premium Office Tower",
             position: "Active",

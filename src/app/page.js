@@ -17,11 +17,11 @@ export default async function Home() {
                 <Header />
                 <Banner />
                 <Value />
+                <Explore />
                 <Tokenization />
                 <Testimonials />
-                <Explore />
-                <Roi />
                 <Faq />
+                <Roi />
                 <GetTouch/>
                 <Footer />
             </div>
