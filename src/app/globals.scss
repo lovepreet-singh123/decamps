@@ -88,3 +88,24 @@ input:-webkit-autofill:active {
         max-width: 163rem;
     }
 }
+
+.common_heading {
+    font-size: 8rem;
+    font-weight: 200;
+    max-width: 133.2rem;
+    width: 100%;
+    margin: 0 auto;
+    color: $white;
+    padding-bottom: 6rem;
+    text-align: center;
+
+    @media (max-width:1199px) {
+        font-size: 6rem;
+    }
+
+    @media (max-width:767px) {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        padding-bottom: 4rem;
+    }
+}

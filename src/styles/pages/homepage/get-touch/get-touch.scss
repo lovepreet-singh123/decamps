@@ -1,8 +1,14 @@
 @use '../../../../../public/assets/theme/_var.scss' as *;
 
 .get_touch {
-    .container {
-        max-width: 162.6rem;
+    padding: 12rem 0;
+
+    @media (max-width:1199px) {
+        padding: 6rem 0;
+    }
+
+    @media (max-width:575px) {
+        padding: 3rem 0;
     }
 
     .get_touch_in {
@@ -12,7 +18,7 @@
         display: flex;
         align-items: center;
 
-        @media (max-width:1599px) {
+        @media (max-width:1679px) {
             padding-right: 10rem;
         }
 
@@ -32,7 +38,7 @@
                 max-width: 73.2rem;
 
 
-                @media (max-width:1599px) {
+                @media (max-width:1679px) {
                     max-width: 55rem;
                 }
 
@@ -100,7 +106,7 @@
                 max-width: 67.3rem;
                 width: 100%;
 
-                @media (max-width:1299px) {
+                @media (max-width:1399px) {
                     flex-direction: column;
                 }
 
@@ -118,6 +124,10 @@
                     max-width: 43.4rem;
                     width: 100%;
                     flex-shrink: 0;
+
+                    @media (max-width:575px) {
+                        max-width: 100%;
+                    }
 
                     input {
                         border: .1rem solid transparent;

@@ -1,5 +1,157 @@
 @use "../../../../../public/assets/theme/_var.scss" as *;
 
 .testimonials_design {
+    background-image: url('../../../../../public/assets/testimonial-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7rem 3rem;
+    @media (max-width:1199px) {
+        padding: 5rem 0;
+    }
+    @media (max-width:575px) {
+        padding: 3rem 0;
+    }
 
+
+    .slick-slider {
+        .slick-list {
+            .slick-slide {
+                padding: 0 1.2rem;
+
+                .testimonial_box {
+                    background: #2C4469CC;
+                    backdrop-filter: blur(24px);
+                    border-radius: 2.6rem;
+                    padding: 5.6rem 6.4rem 5.6rem 5.6rem;
+
+                    @media (max-width:1679px) {
+                        padding: 3rem;
+                    }
+
+                    h3 {
+                        font-weight: 400;
+                        font-size: 4rem;
+                        line-height: 5rem;
+                        color: $white;
+
+                        @media (max-width:1679px) {
+                            font-size: 2.4rem;
+                            line-height: 3.2rem;
+                        }
+                        @media (max-width:991px) {
+                            font-size: 1.8rem;
+                            line-height: 2.2rem;
+                        }
+                    }
+
+                    .rating {
+                        margin: 2.4rem 0;
+
+                        @media (max-width:1399px) {
+                            margin: 1.5rem 0;
+                        }
+                    }
+
+                    p {
+                        font-weight: 400;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                        color: $textclrlight;
+
+                        @media (max-width:991px) {
+                            font-size: 1.6rem;
+                            line-height: 2.2rem;
+                        }
+                    }
+
+                    .profile {
+                        margin-top: 2.4rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 2rem;
+
+                        span {
+                            height: 5.6rem;
+                            width: 5.6rem;
+                            border-radius: 50%;
+                            background: #D9D9D9;
+
+                            @media (max-width:575px) {
+                                height: 4rem;
+                                width: 4rem;
+                            }
+
+                        }
+
+                        h4 {
+                            font-weight: 500;
+                            font-size: 1.6rem;
+                            line-height: 2.4rem;
+                            color: $white;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .slider_add_ons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4.8rem 1.2rem 0;
+        @media (max-width:991px) {
+            padding: 1.5rem 1.2rem 0;
+        }
+
+        .slider_dots {
+            ul {
+                display: flex;
+                gap: .8rem;
+
+                li {
+                    padding: 0;
+                    height: .8rem;
+                    width: .8rem;
+
+                    button {
+                        height: .8rem;
+                        width: .8rem;
+                        border-radius: 50%;
+                        border: transparent;
+                        background-color: rgba($white, .3);
+                        padding: 0;
+                    }
+
+                    &.active {
+                        button {
+                            background-color: $white;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .slider_arrows {
+            display: flex;
+            gap: 1.5rem;
+
+            .slide_arrow {
+                height: 4.8rem;
+                width: 4.8rem;
+                border-radius: 50%;
+                background: transparent;
+                border: 1px solid rgba($white, .2);
+            }
+        }
+    }
+
+    .brand_slider {
+        .slick-track {
+            padding: 2.1rem 0;
+            margin: 4rem 0 1rem;
+        }
+    }
 }

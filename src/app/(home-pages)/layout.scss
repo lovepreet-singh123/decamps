@@ -1,0 +1,8 @@
+@use "../../../public/assets/theme/_var.scss" as *;
+
+
+.home_layout {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}

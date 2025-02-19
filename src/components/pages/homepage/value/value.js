@@ -1,47 +1,23 @@
-import React from 'react';
-import { GlobeIcon, PeopleIcon, PlusIcon } from "../../../../../public/assets/icons/icons";
+import { getAchievements } from '@/app/lib/getAchievements';
+import Image from 'next/image';
 import { Col, Container, Row } from "react-bootstrap";
 import { getAchievements } from "@/app/lib/getAchievements";
 
 const Value = async () => {
-
-    const data = [
-        {
-            img: <PeopleIcon />,
-            text: "Total investments",
-            value: "500K",
-        },
-        {
-            img: <GlobeIcon />,
-            text: "Active users",
-            value: "100",
-        },
-        {
-            img: <PlusIcon />,
-            text: "ROI percentages",
-            value: "20%",
-        }
-    ]
-
     const response = await getAchievements();
-    // console.log(response);
-    let newdata = data.map((item, index) => {
-        item.text = response[index].title;
-        item.value = response[index].content;
-        return item;
-    })
     return (
         <>
             <section className="value">
                 <Container>
                     <Row className="value_content">
-                        {newdata.map((item, index) => (
+                        {response.map((item, index) => (
                             <Col xs={12} md={6} lg={4} className="value_content_inner" key={index}>
                                 <div className="value_content_inner_text">
-                                    <span>{item.img} </span>
-                                    <p>{item.text}</p>
+                                    {/* <span>{item.image} </span> */}
+                                    <span><Image src={item.image} alt={item.title} width={40} height={40} /></span>
+                                    <p>{item.title}</p>
                                 </div>
-                                <h2>{item.value}<span>+</span></h2>
+                                <h2>{item.content}<span>+</span></h2>
                             </Col>
                         ))}
                     </Row>

@@ -13,9 +13,7 @@ const Tokenization = () => {
     return (
         <section className='tokenization'>
             <Container>
-                <div className='heading'>
-                    <h2>Our Real Estate Tokenization Platform</h2>
-                </div>
+                <h2 className='common_heading'>Our Real Estate Tokenization Platform</h2>
                 <div className='token_in'>
                     <Row>
                         <Col lg={6} xl={6}>
@@ -46,7 +44,7 @@ const Tokenization = () => {
                             </div>
                         </Col>
                         <Col lg={6} xl={3}>
-                            <div className="token_card">
+                            <div className="token_card key">
                                 <div className='card_info'>
                                     <h3>Diversification
                                         is Key</h3>
@@ -65,7 +63,7 @@ const Tokenization = () => {
                             </div>
                         </Col>
                         <Col lg={6} xl={3}>
-                            <div className="token_card">
+                            <div className="token_card projected">
                                 <div className='card_info'>
                                     <h3>Projected Yeild</h3>
                                     <p>20%/Year</p>

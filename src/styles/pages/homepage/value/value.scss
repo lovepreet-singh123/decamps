@@ -12,6 +12,12 @@
         @media(max-width: 1679px) {
             padding: 6rem 12rem;
         }
+        @media(max-width: 1399px) {
+            padding: 6rem 2rem;
+        }
+        @media(max-width: 767px) {
+            padding: 3rem 2rem;
+        }
 
         @media(max-width: 991px) {
             padding: 3rem 12rem;
@@ -35,7 +41,8 @@
                 span {
                     margin-right: 1rem;
 
-                    svg {
+                    svg,
+                    img {
                         width: 4.2rem;
                         height: 4.2rem;
 

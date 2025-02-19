@@ -5,6 +5,9 @@
     @media (max-width:767px) {
         padding: 6rem 0;
     }
+    @media (max-width:575px) {
+        padding: 3rem 0;
+    }
 
     .heading {
         text-align: center;
@@ -14,8 +17,8 @@
             line-height: 4rem;
             color: $secondaryclr;
             @media (max-width:767px) {
-                font-size: 2.8rem;
-                line-height: 3.2rem;
+                font-size: 2rem;
+                line-height: 2.2rem;
             }
         }
 
@@ -29,9 +32,9 @@
                 font-size: 6rem;
             }
             @media (max-width:767px) {
-                font-size: 4rem;
-                line-height: 5rem;
-                margin-top: 1rem;
+                font-size: 2.4rem;
+                line-height: 2.4rem;
+                margin-top: 0.5rem;
             }
         }
     }
@@ -39,28 +42,27 @@
     .faq_in {
         margin-top: 10rem;
         @media (max-width:767px) {
-            margin-top: 5rem;
+            margin-top: 4rem;
         }
         .accordion {
             background-color: transparent;
             --bs-accordion-btn-bg: $white;
-            margin-top: 5rem;
 
             .accordion-item {
                 background: linear-gradient(0.23deg, rgba(117, 196, 255, 0) -28.35%, rgba(117, 196, 255, 0.1) 99.8%);
                 border-radius: 2rem;
                 border: 0;
-                padding: 4.2rem;
+                padding-bottom: 1rem;
                 margin-bottom: 3rem;
                 border-radius: 1.2rem;
                 overflow: hidden;
-                @media (max-width:1199px) {
-                    padding: 2rem;
-                    margin-bottom: 2rem;
-                }
-                @media (max-width:575px) {
-                    padding: 0.8rem;
-                }
+                // @media (max-width:1199px) {
+                //     padding-bottom: 2rem;
+                //     margin-bottom: 2rem;
+                // }
+                // @media (max-width:575px) {
+                //     padding-bottom: 0.8rem;
+                // }
 
                 .accordion-header {
                     display: flex;
@@ -70,12 +72,11 @@
                 }
 
                 .accordion-button {
-                    padding: 0; 
+                    padding: 4rem 4rem 2rem;
                     background-color: transparent;
                     box-shadow: none;
-
-                    @media (max-width: 767px) {
-                        padding: 1.5rem;
+                    @media (max-width:1199px) {
+                        padding: 2rem 2rem 1rem;
                     }
 
                     p {
@@ -87,7 +88,7 @@
                             padding-right: 4rem;
                         }
                         @media (max-width: 767px) {
-                            font-size: 2rem;
+                            font-size: 1.8rem;
                         }
                     }
 
@@ -101,8 +102,8 @@
                         background-image: url("../../../../../public/assets/arrow.svg");
 
                         @media (max-width:767px) {
-                            width: 1.8rem;
-                            background-size: 1.8rem;
+                            width: 1.6rem;
+                            background-size: 1.6rem;
                         }
                     }
 
@@ -117,13 +118,15 @@
                     font-size: 2rem;
                     font-weight: 400;
                     line-height: 2.5rem;
-                    padding-left: 0;
-                    padding-bottom: 0;
-
+                    padding: 0 4rem 4rem;
+                    @media (max-width:1199px) {
+                        padding: 0 2rem 0;
+                    }
                     @media (max-width: 767px) {
-                        padding: 1.5rem;
-                        padding-top: 0;
                         font-size: 1.8rem;
+                    }
+                    @media (max-width: 575px) {
+                        font-size: 1.4rem;
                     }
                 }
             }
