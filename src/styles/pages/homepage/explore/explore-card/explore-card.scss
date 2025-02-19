@@ -7,6 +7,9 @@
     &-image {
         img {
             border-radius: 2rem 2rem 0 0;
+            height: 168px;
+            object-fit: cover;
+            object-position: center;
             width: 100%;
         }
     }

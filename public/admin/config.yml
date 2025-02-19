@@ -34,11 +34,9 @@ collections:
             }
           - { name: "description", label: "Description", widget: "text" }
           - { name: "tags", label: "Tags", widget: "list", separator: "," }
-          - {
-                name: "minInvestment",
-                label: "Minimum Investment",
-                widget: "number",
-            }
+          - { name: "minInvestment",label: "Minimum Investment($)",widget: "number",}
+          - { name: "projectYield",label: "Project Yield(%)",widget: "number",}
+          - { name: "nav",label: "NAV($)",widget: "number",}
           - { name: "date", label: "Date", widget: "datetime" }
           - { name: "endDate", label: "End Date", widget: "datetime" }
           - { name: "body", label: "Body", widget: "markdown" }
