@@ -19,7 +19,7 @@ const ExploreCard = ({ image, heading, id, description, tokenImage, position, ta
                 <div className="explore-card-content-text">
                     <div>
                         <h3>{heading}</h3>
-                        <span className={position === "Blocked" ? "close" : "active"}>{position === "Blocked" ? "Close" : "Active"}</span>
+                        <span className={position === "blocked" ? "close" : "active"}>{position === "blocked" ? "Close" : "Active"}</span>
                     </div>
                     <p>{description}</p>
                 </div>
