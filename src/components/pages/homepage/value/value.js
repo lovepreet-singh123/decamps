@@ -29,7 +29,7 @@ const Value = () => {
                 <Container>
                     <Row className="value_content">
                         {data.map((item, index) => (
-                            <Col xs={12} md={6} lg={4} className="value_content_inner" key={index}>
+                            <Col sm={6} md={4} lg={4} className="value_content_inner" key={index}>
                                 <div className="value_content_inner_text">
                                     <span>{item.img} </span>
                                     <p>{item.text}</p>

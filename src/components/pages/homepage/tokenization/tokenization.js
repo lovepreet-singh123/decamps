@@ -13,7 +13,7 @@ const Tokenization = () => {
     return (
         <section className='tokenization'>
             <Container>
-                <h2>Our Real Estate Tokenization Platform</h2>
+                <h2 className='common_heading'>Our Real Estate Tokenization Platform</h2>
                 <div className='token_in'>
                     <Row>
                         <Col lg={6} xl={6}>
