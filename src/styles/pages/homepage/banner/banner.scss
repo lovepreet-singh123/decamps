@@ -18,12 +18,16 @@
     &-left {
         height: 100%;
         margin: 0 auto;
-        max-width: 72.9rem;
+        max-width: 89rem;
         width: 100%;
-        padding: 24.7rem 0 15rem 0rem;
+        padding: 22.5rem 0 15rem 11.4rem;
 
         @media(max-width: 1679px) {
-            padding: 15rem 0 10rem 10rem;
+            padding: 19rem 0 10rem 17.3rem;
+        }
+
+        @media(max-width: 1439px) {
+            padding: 19rem 3.5rem 7rem 6.8rem;
         }
 
         @media(max-width: 1199px) {

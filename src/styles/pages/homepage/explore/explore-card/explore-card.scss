@@ -3,8 +3,11 @@
 .explore-card {
     border: 1px solid $grey;
     border-radius: 2rem;
+    height: 100%;
 
     &-image {
+        position: relative;
+
         img {
             border-radius: 2rem 2rem 0 0;
             height: 168px;
@@ -12,10 +15,24 @@
             object-position: center;
             width: 100%;
         }
+
+        .headtoken_icon {
+            position: absolute;
+            bottom: -2rem;
+            left: 2rem;
+
+            img {
+                border: 2px solid $white;
+                width: 3.8rem;
+                height: 3.8rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
     }
 
     &-content {
-        padding: 1.6rem 2rem;
+        padding: 2rem 2rem 1.6rem;
 
         @media(max-width: 1679px) {
             padding: 1.4rem;

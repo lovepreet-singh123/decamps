@@ -14,11 +14,10 @@
         }
 
         &_inner {
-            margin-bottom: 2rem ;
-            text-align: left ;
+            margin-bottom: 2rem;
+            text-align: left;
 
-            @media(max-widdth: 991px) {
-            }
+            @media(max-widdth: 991px) {}
 
             &_text {
                 display: flex;
@@ -28,7 +27,8 @@
                 span {
                     margin-right: 1rem;
 
-                    svg {
+                    svg,
+                    img {
                         width: 4.2rem;
                         height: 4.2rem;
 
