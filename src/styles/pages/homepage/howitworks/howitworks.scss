@@ -1,0 +1,243 @@
+@use '../../../../../public/assets/theme/_var.scss' as *;
+
+.howit_works {
+    background-color: $secondaryclr;
+    padding: 12.8rem 0;
+
+    @media (max-width:1199px) {
+        padding: 6rem 0;
+    }
+
+    @media (max-width:575px) {
+        padding: 3rem 0;
+    }
+
+    .container {
+        max-width: 140rem;
+    }
+
+    .heading {
+        text-align: center;
+
+        h4 {
+            font-size: 4rem;
+            line-height: 4rem;
+            font-weight: 400;
+            color: $white;
+            margin-top: 2rem;
+
+            @media (max-width:767px) {
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+                margin-top: 1rem;
+            }
+        }
+
+        h2 {
+            font-weight: 200;
+            font-size: 8rem;
+            line-height: 7rem;
+            color: $white;
+
+            @media (max-width:1199px) {
+                font-size: 6rem;
+            }
+
+            @media (max-width:767px) {
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+        }
+    }
+
+    .inner_wrap {
+        margin-top: 6rem;
+
+        .box {
+            position: relative;
+            z-index: 1;
+
+            &:not(:last-child) {
+                @media (max-width: 767px) {
+                    padding-bottom: 1rem;
+                }
+
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    transform: translateX(-50%);
+                }
+
+                &::before {
+                    top: 6rem;
+                    left: 100%;
+                    height: 1.8rem;
+                    width: 18.6rem;
+                    z-index: -1;
+                    background-image: url(../../../../../public/assets/dots-line.png);
+                    background-size: 18.6rem;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                    @media (max-width:1399px) {
+                        background-size: 15rem;
+                        width: 15rem;
+                    }
+
+                    @media (max-width:575px) {
+                        background-image: url('../../../../../public/assets/vertical-line.svg');
+                        top: 100%;
+                        left: 5.6rem;
+                        transform: translateX(-50%);
+                        height: 15rem;
+                        width: 1.7rem;
+                        background-size: contain;
+                    }
+                }
+
+                &::after {
+                    top: 6rem;
+                    right: -13rem;
+                    height: 1.6rem;
+                    width: 1.6rem;
+                    border-radius: 50rem;
+                    border: 3px solid $borderclr;
+
+                    @media (max-width:1399px) {
+                        right: -10.4rem;
+                        top: 6.2rem;
+                        height: 1.3rem;
+                        width: 1.3rem;
+                        border: 2.9px solid $borderclr;
+                    }
+
+                    @media (max-width:575px) {
+                        content: none;
+                    }
+                }
+            }
+
+            &.rocket_box {
+                @media (max-width:575px) {
+                    margin-top: 12rem;
+                }
+
+                &::before,
+                &::after {
+                    @media (max-width:991px) {
+                        content: none;
+                    }
+
+                    @media (max-width:575px) {
+                        content: "";
+                    }
+                }
+
+                &::after {
+                    @media (max-width:575px) {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        .wrap_card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+
+            @media (max-width:575px) {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            img {
+                margin-bottom: 4rem;
+
+                @media (max-width: 1279px) {
+                    height: 13rem;
+                    margin-bottom: 3rem;
+                }
+
+                @media (max-width: 767px) {
+                    height: 10rem;
+                    margin: 0 2rem 0 0;
+                    width: 10rem;
+                    object-fit: contain;
+                }
+            }
+
+            .wrap_data {
+
+                h6 {
+                    color: $white;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    margin-bottom: 2rem;
+                }
+
+                h4 {
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    color: $white;
+                    margin-bottom: 1.5rem;
+
+                    @media (max-width: 1279px) {
+                        font-size: 2.2rem;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    @media (max-width: 991px) {
+                        font-size: 1.8rem;
+                    }
+
+                    @media (max-width: 767px) {
+                        font-size: 1.6rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    color: $white;
+                    max-width: 33.4rem;
+                    margin: 0 auto;
+
+                    @media (max-width: 1279px) {
+                        font-size: 1.4rem;
+                    }
+
+                    @media (max-width: 767px) {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+        }
+        button {
+            padding-inline: 2rem;
+            border: none;
+            font-size: 1.8rem;
+            font-weight: 500;
+            background-color: $baseclr;
+            border-radius: 7rem;
+            width: 100%;
+            max-width: 22.2rem;
+            display: flex;
+            justify-content: center;
+            margin: 6rem auto 0;
+            color: $white;
+            padding: 1.8rem;
+            @media (max-width:575px) {
+                margin: 2rem auto 0;
+                padding: 1.4rem;
+                max-width: 18rem;
+            }
+        }
+    }
+}

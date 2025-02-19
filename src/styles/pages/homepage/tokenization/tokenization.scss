@@ -7,34 +7,26 @@
         padding: 6rem 0;
     }
 
-    .heading {
+    h2 {
+        font-size: 8rem;
+        font-weight: 200;
+        max-width: 133.2rem;
+        width: 100%;
+        margin: 0 auto;
+        color: $baseclr;
+        padding-bottom: 6rem;
         text-align: center;
-
-        h2 {
-            font-weight: 200;
-            font-size: 8rem;
-            line-height: 7rem;
-            color: $baseclr;
-
-            @media (max-width:1199px) {
-                font-size: 6rem;
-            }
-
-            @media (max-width:767px) {
-                font-size: 4rem;
-                line-height: 5rem;
-                margin-top: 1rem;
-            }
+        @media (max-width:1199px) {
+            font-size: 6rem;
+        }
+        @media (max-width:767px) {
+            font-size: 3rem;
+            line-height: 4rem;
+            padding-bottom: 4rem;
         }
     }
 
     .token_in {
-        margin-top: 6rem;
-
-        @media (max-width:767px) {
-            margin-top: 4rem;
-        }
-
         .row {
             row-gap: 6rem;
             margin: 0 -0.6rem;
@@ -167,11 +159,36 @@
                 }
 
                 @media (max-width: 575px) {
-                    width: 15rem;
+                    width: 14rem;
                 }
 
                 &.how_decide {
                     margin-bottom: -2rem;
+                }
+            }
+
+            &.partner,
+            &.projected {
+                background: linear-gradient(0deg, rgba(#fafdff, 1) 0%, rgba(#f2faff, 1) 142.54%) padding-box,
+                    linear-gradient(300.86deg, rgba(34, 125, 242, 0) 22.89%, #227DF2 55.12%, rgba(34, 125, 242, 0) 87.78%) border-box;
+
+                border: {
+                    top: none;
+                    bottom: 2px solid transparent;
+                    left: 2px solid transparent;
+                    right: none;
+                }
+            }
+
+            &.key {
+                background: linear-gradient(0deg, rgba(#fafdff, 1) 0%, rgba(#f2faff, 1) 142.54%) padding-box,
+                    linear-gradient(50.86deg, rgba(34, 125, 242, 0) 22.89%, #227DF2 55.12%, rgba(34, 125, 242, 0) 87.78%) border-box;
+
+                border: {
+                    top: none;
+                    bottom: 2px solid transparent;
+                    right: 2px solid transparent;
+                    left: none;
                 }
             }
 
