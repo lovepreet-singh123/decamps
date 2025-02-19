@@ -27,8 +27,8 @@
             margin-top: 2rem;
 
             @media (max-width:767px) {
-                font-size: 2.8rem;
-                line-height: 3.2rem;
+                font-size: 2rem;
+                line-height: 2.4rem;
                 margin-top: 1rem;
             }
         }
@@ -44,8 +44,8 @@
             }
 
             @media (max-width:767px) {
-                font-size: 4rem;
-                line-height: 5rem;
+                font-size: 2.4rem;
+                line-height: 2.8rem;
             }
         }
     }
@@ -219,6 +219,7 @@
             }
 
         }
+
         button {
             padding-inline: 2rem;
             border: none;
@@ -233,10 +234,11 @@
             margin: 6rem auto 0;
             color: $white;
             padding: 1.8rem;
+
             @media (max-width:575px) {
                 margin: 2rem auto 0;
-                padding: 1.4rem;
-                max-width: 18rem;
+                padding: 1rem 1.4rem;
+                max-width: 17rem;
             }
         }
     }

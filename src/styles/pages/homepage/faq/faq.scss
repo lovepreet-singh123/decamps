@@ -5,6 +5,9 @@
     @media (max-width:767px) {
         padding: 6rem 0;
     }
+    @media (max-width:575px) {
+        padding: 3rem 0;
+    }
 
     .heading {
         text-align: center;
@@ -14,8 +17,8 @@
             line-height: 4rem;
             color: $secondaryclr;
             @media (max-width:767px) {
-                font-size: 2.8rem;
-                line-height: 3.2rem;
+                font-size: 2rem;
+                line-height: 2.2rem;
             }
         }
 
@@ -29,9 +32,9 @@
                 font-size: 6rem;
             }
             @media (max-width:767px) {
-                font-size: 3rem;
-                line-height: 4rem;
-                margin-top: 1rem;
+                font-size: 2.4rem;
+                line-height: 2.4rem;
+                margin-top: 0.5rem;
             }
         }
     }
@@ -39,12 +42,11 @@
     .faq_in {
         margin-top: 10rem;
         @media (max-width:767px) {
-            margin-top: 5rem;
+            margin-top: 4rem;
         }
         .accordion {
             background-color: transparent;
             --bs-accordion-btn-bg: $white;
-            margin-top: 5rem;
 
             .accordion-item {
                 background: linear-gradient(0.23deg, rgba(117, 196, 255, 0) -28.35%, rgba(117, 196, 255, 0.1) 99.8%);
@@ -86,7 +88,7 @@
                             padding-right: 4rem;
                         }
                         @media (max-width: 767px) {
-                            font-size: 2rem;
+                            font-size: 1.8rem;
                         }
                     }
 

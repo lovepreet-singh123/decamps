@@ -15,15 +15,27 @@
     }
 
     @media(max-width: 479px) {
-        padding: 0.5rem 0;
+        padding: 1rem 0;
     }
 
     .header_in {
         display: flex;
         align-items: center;
+        justify-content: space-between;
 
         .logo {
             max-width: 33.1rem;
+
+            @media(max-width: 1399px) {
+                max-width: 20rem;
+            }
+
+            @media(max-width: 767px) {
+                max-width: 16rem;
+            }
+            @media(max-width: 575px) {
+                max-width: 14rem;
+            }
         }
 
         .header_nav {
@@ -35,6 +47,10 @@
 
                 li {
                     margin-right: 5.9rem;
+
+                    @media (max-width:1199px) {
+                        margin-right: 3rem;
+                    }
 
                     a,
                     .dropdown-toggle {
@@ -110,6 +126,42 @@
                     }
                 }
             }
+
+            @media(max-width: 991px) {
+                position: fixed;
+                width: 100%;
+                max-width: 26rem;
+                height: 100vh;
+                padding: 2rem;
+                top: 0;
+                left: 0;
+                background-color: $headerbg;
+                backdrop-filter: blur(3.4rem);
+                transform: translateX(-100%);
+                transition: 300ms ease-in-out;
+                z-index: 11;
+                display: block;
+                margin-left: 0;
+                border-right: 0.1rem solid $baseclr;
+
+                ul {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 2rem;
+
+                    li {
+                        padding-left: 0;
+
+                        &:not(last-child) {
+                            margin-bottom: 2.5rem;
+                        }
+                    }
+                }
+
+                &.active {
+                    transform: translateX(0);
+                }
+            }
         }
 
         .header_action {
@@ -118,6 +170,10 @@
 
             >button {
                 margin-left: 2.1rem;
+
+                @media (max-width:1199px) {
+                    margin-left: 1rem;
+                }
             }
 
             .action_btn {
@@ -133,14 +189,28 @@
                 transition: 300ms ease-in-out;
                 border-radius: 5rem;
 
+                @media (max-width:1199px) {
+                    width: 10rem;
+                    height: 4.2rem;
+                    font-size: 1.6rem;
+                }
+                @media (max-width:575px) {
+                    width: 8rem;
+                    height: 3rem;
+                    font-size: 1.6rem;
+                }
+
                 &:hover {
                     background-color: $baseclr;
                     color: $white;
                 }
             }
-            .toggle_btn{
+
+            .toggle_btn {
                 background: none;
                 border: 0;
+                cursor: pointer;
+
                 span {
                     display: block;
                     background: $baseclr;
@@ -149,10 +219,51 @@
                     border-radius: 4rem;
                     transform-origin: left;
                     transition: all 0.3s ease-in-out;
-                    &:not(last-child) {
-                      margin-bottom: 0.7rem;
+
+                    &:not(:last-child) {
+                        margin-bottom: 0.72rem;
                     }
-                  }
+                }
+
+                &.active {
+                    span {
+                        &:first-child {
+                            transform: rotate(45deg);
+                        }
+
+                        &:nth-child(2) {
+                            opacity: 0;
+                        }
+
+                        &:last-child {
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .backdrop {
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            pointer-events: none;
+            left: 0;
+            opacity: 0.6;
+            visibility: hidden;
+            width: 100%;
+            height: 100vh;
+            padding: 1.2rem 0;
+            transition: 300ms ease-in-out;
+            background-color: $black;
+            // backdrop-filter: blur(3px);
+
+            &.active {
+                // opacity: 1;
+                pointer-events: all;
+                visibility: visible;
             }
         }
     }

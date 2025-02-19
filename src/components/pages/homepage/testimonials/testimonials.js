@@ -41,7 +41,23 @@ const Testimonials = () => {
         slidesToScroll: 1,
         dots: false,
         arrows: false,
-        beforeChange: (current, next) => setSlideIndex(next)
+        beforeChange: (current, next) => setSlideIndex(next),
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     };
 
     const settings1 = {
@@ -50,6 +66,36 @@ const Testimonials = () => {
         dots: false,
         arrows: false,
         autoPlay: true,
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     };
 
     let sliderRef = useRef(null);
@@ -67,7 +113,7 @@ const Testimonials = () => {
     return (
         <section className="testimonials_design">
             <Container>
-                <h2>What Our Investors Say</h2>
+                <h2 className='common_heading'>What Our Investors Say</h2>
                 <Slider
                     {...settings}
                     ref={slider => {

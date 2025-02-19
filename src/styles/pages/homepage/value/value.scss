@@ -12,6 +12,12 @@
         @media(max-width: 1679px) {
             padding: 6rem 12rem;
         }
+        @media(max-width: 1399px) {
+            padding: 6rem 2rem;
+        }
+        @media(max-width: 767px) {
+            padding: 3rem 2rem;
+        }
 
         &_inner {
             margin-bottom: 2rem ;
