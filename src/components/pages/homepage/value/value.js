@@ -1,7 +1,6 @@
 import { getAchievements } from '@/app/lib/getAchievements';
 import Image from 'next/image';
 import { Col, Container, Row } from "react-bootstrap";
-import { getAchievements } from "@/app/lib/getAchievements";
 
 const Value = async () => {
     const response = await getAchievements();
