@@ -54,6 +54,7 @@ const ExploreSlider = ({ data }) => {
                         NAV={item.nav || "1.00"}
                         tags={item.tags}
                         tokenImage={item.token_image}
+                        id={item.slug}
                         endDate={moment(item.date).format('MMMM DD, YYYY')}
                     />
                 </div>

@@ -9,7 +9,7 @@ const Explore = async () => {
         <>
             <div className="explore">
                 <Container>
-                    <h2>Explore our outstanding opportunities of Real Estate Investment</h2>
+                    <h2 className="common_heading">Explore our outstanding opportunities of Real Estate Investment</h2>
                     <ExploreSlider data={response} />
                 </Container>
             </div>

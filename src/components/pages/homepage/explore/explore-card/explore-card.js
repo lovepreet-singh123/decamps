@@ -1,6 +1,12 @@
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-const ExploreCard = ({ image, heading, description, tokenImage, position, tags, minInvestment, projectYield, NAV, endDate }) => {
+
+const ExploreCard = ({ image, heading, id, description, tokenImage, position, tags, minInvestment, projectYield, NAV, endDate }) => {
+    const router = useRouter();
+    const handleNavigate = () => {
+        router.push("/posts/" + id)
+    }
     return (
         <>
             <div className="explore-card">
@@ -41,7 +47,7 @@ const ExploreCard = ({ image, heading, description, tokenImage, position, tags, 
                             </div>
                         </li>
                     </ul>
-                    <button>Subscribe</button>
+                    <button type="button" onClick={handleNavigate}>Subscribe</button>
                 </div>
             </div>
         </>
