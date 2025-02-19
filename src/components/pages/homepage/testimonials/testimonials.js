@@ -49,6 +49,7 @@ const Testimonials = () => {
         slidesToScroll: 1,
         dots: false,
         arrows: false,
+        autoPlay: true,
     };
 
     let sliderRef = useRef(null);

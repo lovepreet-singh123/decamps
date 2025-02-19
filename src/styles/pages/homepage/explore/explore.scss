@@ -1,7 +1,15 @@
 @use "../../../../../public/assets/theme/_var.scss" as *;
 
 .explore {
-    padding: 12rem 0;
+    padding: 10rem 0;
+
+    @media(max-width: 1679px) {
+        padding: 7rem 0;
+    }
+
+    @media(max-width: 1199px) {
+        padding: 5rem 0;
+    }
 
     h2 {
         font-size: 8rem;
@@ -12,6 +20,20 @@
         color: $baseclr;
         padding-bottom: 6rem;
         text-align: center;
+
+        @media(max-width: 1679px) {
+            font-size: 6rem;
+            padding-bottom: 4rem;
+        }
+
+        @media(max-width: 1199px) {
+            font-size: 4rem;
+            padding-bottom: 2rem;
+        }
+
+        @media(max-width: 991px) {
+            font-size: 3rem;
+        }
     }
 
     .slick {

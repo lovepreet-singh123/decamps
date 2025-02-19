@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { GlobeIcon, PeopleIcon, PlusIcon } from "../../../../../public/assets/icons/icons";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Value = () => {
 
@@ -9,17 +9,17 @@ const Value = () => {
         {
             img: <PeopleIcon />,
             text: "Total investments",
-            value: "500K+",
+            value: "500K",
         },
         {
             img: <GlobeIcon />,
             text: "Active users",
-            value: "100+",
+            value: "100",
         },
         {
             img: <PlusIcon />,
             text: "ROI percentages",
-            value: "20%+",
+            value: "20%",
         }
     ]
 
@@ -27,17 +27,17 @@ const Value = () => {
         <>
             <section className="value">
                 <Container>
-                    <div className="value_content">
+                    <Row className="value_content">
                         {data.map((item, index) => (
-                            <div className="value_content_inner" key={index}>
+                            <Col xs={12} md={6} lg={4} className="value_content_inner" key={index}>
                                 <div className="value_content_inner_text">
                                     <span>{item.img} </span>
                                     <p>{item.text}</p>
                                 </div>
-                                <h2>{item.value}</h2>+
-                            </div>
+                                <h2>{item.value}<span>+</span></h2>
+                            </Col>
                         ))}
-                    </div>
+                    </Row>
                 </Container>
             </section>
         </>
