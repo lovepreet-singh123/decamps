@@ -4,6 +4,8 @@
     border: 1px solid $grey;
     border-radius: 2rem;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 
     &-image {
         position: relative;
@@ -33,6 +35,9 @@
 
     &-content {
         padding: 2rem 2rem 1.6rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
 
         @media(max-width: 1679px) {
             padding: 1.4rem;
@@ -87,6 +92,7 @@
         }
 
         ul {
+            padding-bottom: 2rem;
 
             li {
                 display: flex;
@@ -115,7 +121,7 @@
         }
 
         button {
-            margin-top: 2rem;
+            margin-top: auto;
             padding-inline: 2rem;
             border: none;
             font-size: 1.8rem;
@@ -125,10 +131,19 @@
             width: 100%;
             color: $white;
             padding: 1.1rem;
+            transition: 300ms ease-in-out;
 
             @media(max-width: 1199px) {
                 padding: 0.7rem;
                 font-size: 1.6rem;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 1.4rem;
+            }
+
+            &:hover {
+                background-color: $secondaryclr;
             }
         }
     }

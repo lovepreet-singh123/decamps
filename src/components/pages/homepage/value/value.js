@@ -1,35 +1,9 @@
 import { getAchievements } from '@/app/lib/getAchievements';
-import { Col, Container, Row } from "react-bootstrap";
-import { GlobeIcon, PeopleIcon, PlusIcon } from "../../../../../public/assets/icons/icons";
 import Image from 'next/image';
+import { Col, Container, Row } from "react-bootstrap";
 
 const Value = async () => {
     const response = await getAchievements();
-    // const data = [
-    //     {
-    //         img: <PeopleIcon />,
-    //         text: "Total investments",
-    //         value: "500K",
-    //     },
-    //     {
-    //         img: <GlobeIcon />,
-    //         text: "Active users",
-    //         value: "100",
-    //     },
-    //     {
-    //         img: <PlusIcon />,
-    //         text: "ROI percentages",
-    //         value: "20%",
-    //     }
-    // ]
-    // let newData = response.map((item) => {
-    //     return {
-    //         img: item.image,
-    //         text: item.title,
-    //         value: item.content,
-    //     }
-    // })
-
     return (
         <>
             <section className="value">

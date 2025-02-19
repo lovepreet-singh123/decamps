@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { notFound } from "next/navigation";
-import { Container } from "react-bootstrap";
+import { Badge, Container } from "react-bootstrap";
 import "./page.scss";
 import Image from "next/image";
 import moment from "moment";
@@ -25,27 +25,26 @@ export default async function BlogPost({ params }) {
     const fileContent = fs.readFileSync(filePath, "utf-8");
     const { data, content } = matter(fileContent);
 
-
     return (
         <div className="blog_page">
-            <Image width={1600} height={700} src={data.image.replace("public", "")} alt="" />
+            <div className="image-container position-relative">
+                <Image width={1600} height={700} src={data.image.replace("public", "")} alt={data.title} className="banner-image" />
+                <Image width={40} height={40} className="author-image" src={data.token_image.replace("public", "")} alt="Author" />
+            </div>
             <Container>
                 <div className="page_in">
-                    <h1>{data.title}</h1>
-                    <p>{data.description} </p>
+                    <h1 className="blog-title">{data.title}</h1>
+                    <p className="blog-description">{data.description}</p>
                 </div>
-                <div>
-                    <div className="card-header position-relative">
-                        <Image className="position-absolute bottom-0 start-0" style={{ width: "30px", height: "30px" }} width={30} height={30} src={data.token_image.replace("public", "")} alt="" />
+                <div className="blog-meta">
+                    <div className="author-info">
+                        <p className="text-muted ms-2 mb-0 text-center">{moment(data.date).format('MMMM Do YYYY, h:mm:ss a')}</p>
                     </div>
-                    <div className="d-flex mt-3 ms-3">
-                        {data.tags.map(item => <span key={item} className="badge rounded-pill text-bg-secondary me-2">{item}</span>)}
+                    <div className="tags-container d-flex justify-content-center mt-3">
+                        {data.tags.map(item => <Badge key={item} className="me-2">{item}</Badge>)}
                     </div>
-                    <p className="card-text"><small className="text-body-secondary">{moment(data.date).format('MMMM Do YYYY, h:mm:ss a')}</small></p>
-                    <pre>
-                        <div dangerouslySetInnerHTML={{ __html: content }} />
-                    </pre>
                 </div>
+                <div className="blog-content text-center" dangerouslySetInnerHTML={{ __html: content }} />
             </Container>
         </div>
     );

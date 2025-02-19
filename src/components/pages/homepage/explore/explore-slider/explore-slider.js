@@ -6,8 +6,9 @@ import { formatNumber } from '@/utils/utils';
 
 const ExploreSlider = ({ data }) => {
     const settings = {
+        arrows: false,
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -20,7 +21,7 @@ const ExploreSlider = ({ data }) => {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true
+                    dots: false,
                 }
             },
             {
@@ -28,14 +29,14 @@ const ExploreSlider = ({ data }) => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    initialSlide: 2
+                    initialSlide: 2,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
             }
         ]

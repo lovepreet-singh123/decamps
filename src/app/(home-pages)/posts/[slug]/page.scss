@@ -1,17 +1,76 @@
 @use '../../../../../public/assets/theme/_var.scss' as *;
 
 .blog_page {
-    position: relative;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 14rem;
 
-    >img {
-        position: absolute;
-        top: 0;
-        left: 0;
+    img {
         width: 100%;
-        height: 100%;
+        height: 400px;
         object-fit: cover;
-        object-position: center;
-        z-index: -1;
+        border-radius: 10px;
+    }
+
+    .author-image {
+        position: absolute;
+        bottom: -2rem;
+        left: 2rem;
+        border: 2px solid $white;
+        width: 3.8rem;
+        height: 3.8rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .page_in {
+        text-align: center;
+        margin-top: 20px;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: none;
+        padding: 10px;
+        border: none;
+    }
+
+    .card-text {
+        text-align: center;
+        font-style: italic;
+        color: #666;
+    }
+
+    .badge {
+        font-size: 1.4rem;
+    }
+
+    .blog-content {
+        font-size: 1.6rem;
+        margin-top: 4rem;
+    }
+
+    pre {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+        font-size: 1rem;
+        line-height: 1.5;
     }
 }
