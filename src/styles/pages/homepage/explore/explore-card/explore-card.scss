@@ -34,7 +34,7 @@
     }
 
     &-content {
-        padding: 2rem 2rem 1.6rem;
+        padding: 1.6rem 2rem 1.6rem;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -55,11 +55,20 @@
                     font-size: 1.2rem;
                     font-weight: 500;
                     padding: 0.7rem 1rem;
+                    margin-left: 0.8rem;
                     border-radius: 1rem;
+
+                    &.close {
+                        background: #E63E321A;
+                        color: $redclr;
+                    }
                 }
 
                 h3 {
                     font-size: 1.6rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
 
                     @media(max-width: 1679px) {
                         font-size: 1.4rem;
@@ -68,8 +77,9 @@
             }
 
             p {
-                color: $black384B68;
+                color: #878395;
                 font-size: 1.2rem;
+                line-height: 1.6rem;
             }
         }
 
