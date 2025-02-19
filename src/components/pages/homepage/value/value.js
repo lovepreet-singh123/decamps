@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { GlobeIcon, PeopleIcon, PlusIcon } from "../../../../../public/assets/icons/icons";
 import Image from 'next/image';
 
-const Value =async () => {
+const Value = async () => {
     const response = await getAchievements();
     // const data = [
     //     {
@@ -29,7 +29,7 @@ const Value =async () => {
     //         value: item.content,
     //     }
     // })
-    
+
     return (
         <>
             <section className="value">
@@ -39,7 +39,7 @@ const Value =async () => {
                             <Col xs={12} md={6} lg={4} className="value_content_inner" key={index}>
                                 <div className="value_content_inner_text">
                                     {/* <span>{item.image} </span> */}
-                                    <Image src={item.image} alt={item.title} width={40} height={40} />
+                                    <span><Image src={item.image} alt={item.title} width={40} height={40} /></span>
                                     <p>{item.title}</p>
                                 </div>
                                 <h2>{item.content}<span>+</span></h2>

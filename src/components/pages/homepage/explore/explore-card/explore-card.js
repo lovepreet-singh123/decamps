@@ -12,7 +12,9 @@ const ExploreCard = ({ image, heading, id, description, tokenImage, position, ta
             <div className="explore-card">
                 <div className="explore-card-image">
                     <Image width={400} height={200} src={image} alt={heading} />
-                    <Image width={30} height={30} src={tokenImage} alt={heading} />
+                    <div className="headtoken_icon">
+                        <Image width={30} height={30} src={tokenImage} alt={heading} />
+                    </div>
                 </div>
                 <div className="explore-card-content">
                     <div className="explore-card-content-text">
@@ -49,7 +51,7 @@ const ExploreCard = ({ image, heading, id, description, tokenImage, position, ta
                     </ul>
                     <button type="button" onClick={handleNavigate}>Subscribe</button>
                 </div>
-            </div>
+            </div >
         </>
     );
 };
