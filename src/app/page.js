@@ -9,6 +9,7 @@ import Tokenization from "@/components/pages/homepage/tokenization/tokenization"
 import Faq from "@/components/pages/homepage/faq/faq";
 import "./page.scss";
 import GetTouch from "@/components/pages/homepage/get-touch/get-touch";
+import Howitworks from "@/components/pages/homepage/howitworks/howitworks";
 
 export default async function Home() {
     return (
@@ -17,12 +18,13 @@ export default async function Home() {
                 <Header />
                 <Banner />
                 <Value />
+                <Howitworks />
+                <Explore />
                 <Tokenization />
                 <Testimonials />
-                <Explore />
                 <Roi />
                 <Faq />
-                <GetTouch/>
+                <GetTouch />
                 <Footer />
             </div>
             {/* <Achievements />
