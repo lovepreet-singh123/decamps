@@ -10,15 +10,15 @@ const FaqAccordions = ({ data }) => {
                     {data.slice(0, data.length / 2).map((item, index) => (
                         <Accordion.Item
                             className="accordion_data"
-                            eventKey={item.ques}
-                            key={item.ques}
+                            eventKey={index}
+                            key={index}
                         >
                             <Accordion.Header>
                                 <p>
-                                    {item.ques}
+                                    {item.title}
                                 </p>
                             </Accordion.Header>
-                            <Accordion.Body>{item.ans}</Accordion.Body>
+                            <Accordion.Body>{item.content}</Accordion.Body>
                         </Accordion.Item>
                     ))}
                 </Col>
@@ -26,15 +26,15 @@ const FaqAccordions = ({ data }) => {
                     {data.slice(data.length / 2).map((item, index) => (
                         <Accordion.Item
                             className="accordion_data"
-                            eventKey={item.ques}
-                            key={item.ques}
+                            eventKey={index}
+                            key={index}
                         >
                             <Accordion.Header>
                                 <p>
-                                    {item.ques}
+                                    {item.title}
                                 </p>
                             </Accordion.Header>
-                            <Accordion.Body>{item.ans}</Accordion.Body>
+                            <Accordion.Body>{item.content}</Accordion.Body>
                         </Accordion.Item>
                     ))}
                 </Col>
