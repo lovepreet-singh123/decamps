@@ -1,0 +1,68 @@
+@use '../../../../../public/assets/theme/_var.scss' as *;
+
+.blog_card {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    @media (max-width:575px) {
+        gap: 1.6rem;
+    }
+
+    img {
+        max-width: 25rem;
+        border-radius: 2.8rem;
+
+        @media (max-width:575px) {
+            max-width: 18rem;
+            border-radius: 1.5rem;
+        }
+    }
+
+    .blog_card_content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @media (max-width:575px) {
+            gap: 1rem;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            color: $baseclr;
+
+            @media (max-width:1399px) {
+                font-size: 1.6rem;
+                line-height: 2rem;
+            }
+
+            @media (max-width:575px) {
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+            }
+
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 3rem;
+            line-height: 3.8rem;
+            color: $secondaryclr;
+
+
+            @media (max-width:1399px) {
+                font-size: 2.4rem;
+                line-height: 3rem;
+            }
+
+
+            @media (max-width:575px) {
+                font-size: 1.6rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}

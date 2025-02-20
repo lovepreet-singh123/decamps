@@ -1,0 +1,16 @@
+@use '../../../../../public/assets/theme/_var.scss' as *;
+
+.recent_blogs {
+    padding: 8rem 0 12rem;
+
+    h2 {
+        color: $baseclr;
+    }
+    ul {
+        li {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

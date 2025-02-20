@@ -1,0 +1,28 @@
+@use '../../../../../public/assets/theme/_var.scss' as *;
+
+.previous_blogs {
+    background: $secondaryclr;
+    padding: 12rem 0;
+
+    @media (max-width:1399px) {
+        padding: 6rem 0;
+    }
+
+    @media (max-width:991px) {
+        padding: 4rem 0;
+    }
+
+    @media (max-width:575px) {
+        padding: 2rem 0;
+    }
+
+    .previous_blog_card {
+        h3 {
+            color: $white;
+        }
+
+        h5 {
+            color: $textclrlight;
+        }
+    }
+}

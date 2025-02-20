@@ -1,0 +1,37 @@
+@use '../../../../../public/assets/theme/_var.scss' as *;
+
+.preview_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+        max-width: 100%;
+        border-radius: 2.8rem;
+    }
+
+    h5 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25.2px;
+        text-align: center;
+        color: $black384B68;
+        text-align: center;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: $baseclr;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 37.8px;
+        color: $secondaryclr;
+        text-align: center;
+    }
+}
