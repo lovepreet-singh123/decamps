@@ -1,4 +1,11 @@
 .blogs {
     margin-top: 13.5rem;
-    
+
+    @media (max-width:1399px) {
+        margin-top: 8rem;
+    }
+
+    @media (max-width:991px) {
+        margin-top: 6rem;
+    }
 }

@@ -31,13 +31,11 @@ const RecentBlogs = () => {
             <Container>
                 <Row>
                     <Col lg={6}>
-                        <div className='recent_image_sec'>
-                            <PreviewCard
-                                image={mainImg}
-                                title='¿Qué es la Web3 y por qué facilita las inversiones?'
-                                description='La evolución digital no se detiene, y en Tokencrowd nos adelantamos al futuro con la web 3.0, la nueva era de Internet que está transformando...'
-                            />
-                        </div>
+                        <PreviewCard
+                            image={mainImg}
+                            title='¿Qué es la Web3 y por qué facilita las inversiones?'
+                            description='La evolución digital no se detiene, y en Tokencrowd nos adelantamos al futuro con la web 3.0, la nueva era de Internet que está transformando...'
+                        />
                     </Col>
                     <Col lg={6}>
                         <ul>

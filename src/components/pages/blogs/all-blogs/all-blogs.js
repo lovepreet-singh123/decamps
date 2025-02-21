@@ -55,10 +55,11 @@ const AllBlogs = () => {
                         ))
                     }
                 </Row>
+                <button className='load_more_btn'>
+                    Load More
+                </button>
             </Container>
-            <button className='load_more_btn'>
-                Load More
-            </button>
+
         </div>
     )
 }

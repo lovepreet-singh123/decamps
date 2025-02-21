@@ -24,10 +24,12 @@
         flex-direction: column;
         gap: 2rem;
 
+        @media (max-width:1399px) {
+            gap: 1.6rem;
+        }
         @media (max-width:575px) {
             gap: 1rem;
         }
-
         p {
             font-weight: 400;
             font-size: 1.8rem;

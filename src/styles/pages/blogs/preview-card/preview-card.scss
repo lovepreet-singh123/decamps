@@ -4,20 +4,59 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.8rem;
+
+    @media (max-width:1399px) {
+        gap: 1.6rem;
+    }
+
+    @media (max-width:575px) {
+        gap: 1rem;
+    }
 
     img {
         max-width: 100%;
         border-radius: 2.8rem;
     }
 
+    h3 {
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 3.6rem;
+        color: $secondaryclr;
+        text-align: center;
+        padding: 0 7rem;
+
+        @media (max-width:1399px) {
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            padding: 0 0rem;
+
+        }
+
+        @media (max-width:575px) {
+            font-size: 2rem;
+            line-height: 2.4rem;
+        }
+    }
+
     h5 {
         font-weight: 400;
-        font-size: 20px;
-        line-height: 25.2px;
+        font-size: 2rem;
+        line-height: 2.52rem;
         text-align: center;
         color: $black384B68;
         text-align: center;
+
+        @media (max-width:1399px) {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
+
+        @media (max-width:575px) {
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
     }
 
     p {
@@ -25,13 +64,17 @@
         font-size: 1.8rem;
         line-height: 2.2rem;
         color: $baseclr;
+
+        @media (max-width:1399px) {
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+
+        @media (max-width:575px) {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
     }
 
-    h3 {
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 37.8px;
-        color: $secondaryclr;
-        text-align: center;
-    }
+
 }

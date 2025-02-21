@@ -3,9 +3,34 @@
 .recent_blogs {
     padding: 8rem 0 12rem;
 
+    @media (max-width:1399px) {
+        padding: 6rem 0 8rem;
+    }
+
+    @media (max-width:991px) {
+        padding: 4rem 0;
+    }
+
+    @media (max-width:575px) {
+        padding: 2rem 0;
+    }
+
     h2 {
         color: $baseclr;
     }
+
+    .row {
+        @media (max-width:991px) {
+            margin: -1.5rem 0;
+        }
+
+        >div {
+            @media (max-width:991px) {
+                padding: 1.5rem 0;
+            }
+        }
+    }
+
     ul {
         li {
             &:not(:last-child) {
